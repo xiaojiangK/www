@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="images/css/style.css"/>
+  <title>Retrieve</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="right">
+        <img src="images/icon-tel.png" alt="">
+        <span>Hotline: 400-6830688</span>
+      </div>
+    </div>
+    <div class="main retrieve">
+      <div class="content">
+        <div class="login">
+          <div class="title">Hotel management system</div>
+          <div class="form">
+            <form action="">
+              <ul>
+                <li>
+                  <img src="images/icon-phone.png" class="icon" alt="">
+                  <input type="text" name="username" class="user" placeholder="User name" />
+                </li>
+                <li class="vcode">
+                  <img src="images/icon-email.png" class="icon" alt="">
+                  <input type="text" name="code" placeholder="Verification code" />
+                  <button type="button" class="border-btn"><span>Get code</span></button>
+                </li>
+                <li>
+                  <img src="images/icon-pass.png" class="icon" alt="">
+                  <input type="text" name="password" placeholder="New password" />
+                </li>
+                <li>
+                  <img src="images/icon-pass.png" class="icon" alt="">
+                  <input type="text" name="AgainPassword" placeholder="Again password" />
+                </li>
+                <li class="btns">
+                  <a href="./login.html"><button type="button" class="border-btn">Back to Login</button></a>
+                  <button type="submit">Confirm</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>©️2019 广州求新信息科技有限公司  粤ICP备XXXXXX号</p>
+      <p>地址：广州市番禺大石街道植村一路悦凯中心308号</p>
+    </div>
+  </div>
+
+  <script src="images/js/jquery.min.js"></script>
+  <script>
+    $('.login .vcode button').on('click', function (){
+      var that = this;
+      var user = $('.user')
+      var value = $('.user').val()
+      if (!value) {
+        alert('Please enter your mobile number')
+      }
+      clearInterval(timer);
+      $(this).addClass('disable');
+      // api
+      console.log(value)
+
+      var timer = null;
+      var iNow = 60;
+      timer = setInterval(function (){
+        if (iNow <= 1) {
+          iNow = 60;
+          clearInterval(timer);
+          $(that).removeClass('disable');
+          $('span', that).text('Get code');
+        } else {
+          iNow --;
+          $('span', that).text('Resend ' + iNow + 's');
+        }
+      }, 1000)
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1650, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="images/css/style.css" />
+	<title>广州市典点雕塑工艺品有限公司</title>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<div class="container">
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li class="toggle">
+						<a href="list_article.html">新闻动态</a>
+						<ul class="dropdown-menu">
+							<li><a href="">公司新闻</a></li>
+							<li><a href="">行业新闻</a></li>
+						</ul>
+					</li>
+					<li><a href="list_case.html">案例展示</a></li>
+					<li class="logo"><a href="/"><img src="images/logo.png" /></a></li>
+					<li><a href="">设计</a></li>
+					<li><a href="">培训</a></li>
+					<li><a href="msg_onepage.html">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="msg_pro">
+		<div class="page">
+			<div class="container">
+				<div class="product">
+					<a href="" class="btns prev"></a>
+					<div class="content">
+						<div class="bigImg">
+							<img src="images/pro_big_img.png" alt="">
+						</div>
+						<div class="smallImg">
+							<ul>
+								<li><img src="images/pro_sm_img.png" alt=""></li>
+								<li><img src="images/pro_sm_img2.png" alt=""></li>
+								<li><img src="images/pro_sm_img3.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="desc">
+							<p class="title">吊带萝卜兔</p>
+							<p>RABBIT</p>
+							<p>编号：1234567</p>
+							<p>尺寸：1.45*1.05*1M</p>
+						</div>
+					</div>
+					<a href="" class="btns next"></a>
+				</div>
+				<a href="" class="btn">立即定制</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="foot_inner">
+				<div class="foot_nav">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">新闻动态</a></li>
+						<li><a href="">案例展示</a></li>
+						<li><a href="">设计</a></li>
+						<li><a href="">培训</a></li>
+						<li><a href="">关于我们</a></li>
+					</ul>
+				</div>
+				<div class="share">
+					<ul>
+						<li><a href=""><img src="images/ww.png" /></a></li>
+						<li><a href=""><img src="images/wx.png" /></a></li>
+						<li><a href=""><img src="images/wb.png" /></a></li>
+					</ul>
+				</div>
+				<div class="address">
+					<span>地址：中国广东广州市番禺区番禺大道南304号</span>
+					<span>电话：<a href="tel:86-020-66636123">86-020-66636123</a></span>
+					<span>手机号码：<a href="tel:18620600200">18620600200</a></span>
+					<span>传真：86-020-66636123</span>
+				</div>
+				<div class="copyRight">
+					<p>Copyright © 2014-2017 版权所有 广州市典点雕塑工艺品有限公司  粤ICP备05039277号-1</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="images/js/Jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+	// 二级导航切换
+	$('.toggle').each(function (){
+		$(this).hover(function() {
+			$(this).find('ul').stop().slideDown();
+		}, function() {
+			$(this).find('ul').stop().slideUp();
+		});
+	});
+
+	$('.msg_pro .smallImg img').each(function() {
+		$(this).hover(function() {
+			$('.msg_pro .bigImg img').attr('src',$(this).attr('src'));
+		});
+	});
+</script>
+</body>
+</html>

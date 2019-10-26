@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盛钱包</title>
+	<meta name="viewport" content="width=1200, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="images/css/style.css">
+	<link rel="stylesheet" type="text/css" href="images/css/animate.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<a href=""><img src="images/logo.png"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/">首页</a></li>
+						<li><a href="list_product.html">产品介绍</a></li>
+						<li><a href=list_article.html>行业资讯</a></li>
+						<li><a href="list_book.html">代理加盟</a></li>
+						<li><a href="msg_onepage.html" class="active">APP下载</a></li>
+						<li>
+							<a href="msg_contact.html" class="toggle">联系我们</a>
+							<ul>
+								<li><a href="msg_map.html">详细地址</a></li>
+								<li><a href="msg_about.html">关于我们</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="sub_banner">
+				<img src="images/sub_banner3.png" alt="" />
+			</div>
+			<div class="onepage">
+				<div class="picture">
+					<img src="images/onepage1.jpg" alt="">
+					<img src="images/onepage2.jpg" alt="">
+					<img src="images/onepage3.jpg" alt="">
+				</div>
+				<div class="list">
+					<ul>
+						<li class="wow fadeInUp">
+							<a href="" class="date">
+								<p>03/07</p>
+								<span>2017</span>
+							</a>
+							<div class="desc">
+								<a href="">盛钱包</a>
+								<p>深圳市前海移联科技有限公司打造的（简称“盛钱包”）银盛支付授权的银行卡收单业务战略合作伙伴，是银盛支付...</p>
+							</div>
+						</li>
+						<li class="wow fadeInUp">
+							<a href="" class="date">
+								<p>10/25</p>
+								<span>2017</span>
+							</a>
+							<div class="desc">
+								<a href="">“盛钱包”手机pos常见问题解答</a>
+								<p>“盛钱包”手机pos常见问题解答...</p>
+							</div>
+						</li>
+						<li class="wow fadeInUp">
+							<a href="" class="date">
+								<p>12/26</p>
+								<span>2017</span>
+							</a>
+							<div class="desc">
+								<a href="">2017年度盛钱包第三期总部开放日圆满结束</a>
+								<p>2017年12月15日下午两点，盛钱包第三期总部开放日在深圳前海移联科技有限公司举行，来自多个省份的意向合作商参加...</p>
+							</div>
+						</li>
+						<li class="wow fadeInUp">
+							<a href="" class="date">
+								<p>11/17</p>
+								<span>2017</span>
+							</a>
+							<div class="desc">
+								<a href="">盛钱包2017第二季总部开放日圆满结束</a>
+								<p>2017年11月16日下午两点，【盛钱包总部开放日】在深圳前海移联科技有限公司举行。这是继11月初企业开放日后进行...</p>
+							</div>
+						</li>
+						<li class="wow fadeInUp">
+							<a href="" class="date">
+								<p>08/11</p>
+								<span>2017</span>
+							</a>
+							<div class="desc">
+								<a href="">8月8无现金日，积分当钱花，豪送8万现金！</a>
+								<p>什么是超级会员日？从8月1日至12月31日起，每月8号、18号、28号，为超级会员日，超级积分8元当16元花，豪送...</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="Top"></div>
+			<strong class="tel">服务热线：400-000-2999</strong>
+			<p>粤ICP备16045637号</p>
+			<p>Copyright 盛钱包版权所有. All Rights Reserved.</p>
+			<span class="gs">深圳前海移联科技有限公司</span>
+			<p class="Support"><a href="">管理登录</a> <span> | </span> <a href="">粤ICP备16045637号</a></p>
+		</div>
+	</div>
+	<script type="text/javascript" src="images/js/Jquery.js"></script>
+	<script type="text/javascript" src="images/js/wow.min.js"></script>
+	<script type="text/javascript">	
+		// 滑动动画
+		new WOW().init();
+
+		// 返回顶部、全局
+		$(window).scroll(function (){
+			if ($(window).scrollTop() >= 120) {
+				$('#Top').css('height','50px');
+			}else{
+				$('#Top').css('height','0');
+			}
+		});
+		$('#Top').on('click',function (){
+			$('body').animate({
+				scrollTop: 0
+			});
+		});
+		
+		// 二级菜单
+		$('.nav .toggle').each(function (){
+			$(this).hover(function (){
+				$(this).siblings('ul').show();
+				$(this).siblings('ul').hover(function() {
+					$(this).show();
+				}, function() {
+					$(this).hide();
+				});
+			}, function (){
+				$(this).siblings('ul').hide();
+			});
+		});
+	</script>
+</body>
+</html>

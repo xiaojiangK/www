@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盛钱包</title>
+	<meta name="viewport" content="width=1200, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="images/css/style.css">
+	<link rel="stylesheet" type="text/css" href="images/css/animate.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<a href=""><img src="images/logo.png"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/">首页</a></li>
+						<li><a href="list_product.html" class="active">产品介绍</a></li>
+						<li><a href=list_article.html>行业资讯</a></li>
+						<li><a href="list_book.html">代理加盟</a></li>
+						<li><a href="msg_onepage.html">APP下载</a></li>
+						<li>
+							<a href="msg_contact.html" class="toggle">联系我们</a>
+							<ul>
+								<li><a href="msg_map.html">详细地址</a></li>
+								<li><a href="msg_about.html">关于我们</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="sub_banner">
+				<img src="images/subBanner.jpg" alt="" />
+			</div>
+			<div class="product_box">
+				<div class="product1">
+					<div class="title">
+						<strong>盛钱包POS机</strong>
+						<p>“盛钱包”是一款功能强大的移动互联网支付终端品牌</p>
+						<p>并作为前海移联打造“移动金融生态链”的重要载体和产品工具，为广大中小微商户提供“安全、稳定、快捷”的移动支付解决方案和相关运营服务</p>
+						<p>助力每一位创业者实现梦想</p>
+					</div>
+					<div class="picture">
+						<img src="images/product1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="product3">
+					<div class="picture">
+						<div class="pic_title"><p>自由容器</p></div>
+						<img src="images/product3.jpg" />
+						<div class="pic_title"><p>自由容器</p></div>
+						<img src="images/table.jpg" />
+						<img src="images/product4.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="Top"></div>
+			<strong class="tel">服务热线：400-000-2999</strong>
+			<p>粤ICP备16045637号</p>
+			<p>Copyright 盛钱包版权所有. All Rights Reserved.</p>
+			<span class="gs">深圳前海移联科技有限公司</span>
+			<p class="Support"><a href="">管理登录</a> <span> | </span> <a href="">粤ICP备16045637号</a></p>
+		</div>
+	</div>
+	<script type="text/javascript" src="images/js/Jquery.js"></script>
+	<script type="text/javascript" src="images/js/wow.min.js"></script>
+	<script type="text/javascript">	
+		// 滑动动画
+		new WOW().init();
+
+		// 返回顶部、全局
+		$(window).scroll(function (){
+			if ($(window).scrollTop() >= 120) {
+				$('#Top').css('height','50px');
+			}else{
+				$('#Top').css('height','0');
+			}
+		});
+		$('#Top').on('click',function (){
+			$('body').animate({
+				scrollTop: 0
+			});
+		});
+		
+		// 二级菜单
+		$('.nav .toggle').each(function (){
+			$(this).hover(function (){
+				$(this).siblings('ul').show();
+				$(this).siblings('ul').hover(function() {
+					$(this).show();
+				}, function() {
+					$(this).hide();
+				});
+			}, function (){
+				$(this).siblings('ul').hide();
+			});
+		});
+	</script>
+</body>
+</html>

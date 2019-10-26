@@ -1,0 +1,445 @@
+/* 公共部分 */
+body,a,p,li,ul,ol,h1,h2,h3,h4,h5,strong,div {
+	font-size:14px;
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+	border: none;
+	color:#666;
+}
+body{
+	background: #fff;
+}
+a:link,a:hover,a:active,a:visited,img{
+	text-decoration: none !important; border:none;-webkit-transition: all .3s linear;-o-transition: all .3s linear;-moz-transition: all .3s linear;-ms-transition: all .3s linear;transition: all .3s linear;
+}
+.wrap{
+	width:100%; margin:0 auto; overflow: hidden;
+}
+ul,li,ol{
+	padding: 0; margin: 0; list-style: none;
+}
+.header{
+	width:100%; margin:0 auto;
+}
+.main{
+	width:100%; margin:0 auto; overflow:hidden;
+}
+.footer{
+	width:100%; margin:20px auto 0; overflow:hidden; color: #999; background: #222; padding:50px 0; text-align: center; font-size: 12px;
+}
+
+/* 头部部分 */
+.header .topBox{
+	width:100%; background: url(../topline.jpg) top center no-repeat; background-size: 100% 6px; padding-top: 6px; overflow: hidden;
+}
+.header .topBox .top{
+	width:100%; height:30px; border-bottom: 1px solid #ddd; line-height: 30px;
+}
+.header .top .welcomeBox{
+	float: left; font-size: 12px;
+}
+.header .top .languageBox{
+	float: right;
+}
+.header .top .languageBox a{
+	display: block; color: #000; display: inline-block; padding: 0px 15px 0px 45px; font-size: 12px; line-height: 30px; text-align: center;
+}
+.header .top .languageBox .zh{
+	border-left: 1px solid #ddd; border-right: 1px solid #ddd; background: url(../zh.png) 15px center no-repeat;
+}
+.header .top .languageBox .en{
+	border-right: 1px solid #ddd; background: url(../en.png) 15px center no-repeat;
+}
+.header .logo{
+	padding: 20px 0px 20px 0px;
+}
+.header .logo img{
+	max-width: 100%;
+}
+.header .search{
+	margin:50px 0px 0px 0px; overflow: hidden;
+}
+.header .search input:focus{
+	-webkit-outline: none;-moz-outline: none;-o-outline: none;-ms-outline: none;outline: none;
+}
+.header .search input[type='text']:focus{
+	background: #666;
+}
+.header .search input[type='submit']:hover{
+	background: #000;
+}
+.header .search input[type='text']{
+	width:212px; height:32px; line-height:32px; text-indent: 10px; float: left; color:#fff; background: #999; -webkit-transition: background 0.5s;-o-transition: background 0.5s; -moz-transition: background 0.5s;-ms-transition: background 0.5s;transition: background 0.5s;
+}
+.header .search input[type='submit']{
+	background: #8bcf61; width:50px; height:30px; margin-left:-2px; text-align: center; float: left; border:none; color: #fff;  -webkit-transition: background 0.5s;-o-transition: background 0.5s; -moz-transition: background 0.5s;-ms-transition: background 0.5s;transition: background 0.5s;
+}
+input::-webkit-input-placeholder{ 
+    color:#fff;
+}
+input:-o-placeholder{ 
+    color:#fff;
+}
+input::-moz-placeholder{ 
+    color:#fff;
+}
+input:-ms-input-placeholder{ 
+    color:#fff;
+}
+input:input-placeholder{ 
+    color:#fff;
+}
+.navbar{
+	line-height: 50px; height:50px; background:#f9f9f9 url(../navbg.gif) center center repeat-x; margin-bottom: 0 !important; border:none !important;
+}
+.navbar .navbar-brand{
+	background: #72bf43 url(../home.png) no-repeat center center; width:50px;
+}
+.navbar .nav>li{
+	border-right: 1px solid #ddd;
+}
+.navbar .nav>li>a{
+	line-height: 50px; height: 50px; padding: 0; text-align: center; color: #777;
+}
+.navbar .nav>li>a:hover{
+	background: #4c4c4c; color: #fff;
+}
+.navbar .dropdown-menu,.navbar-collapse{
+	padding: 0 !important;
+}
+.navbar .dropdown-menu a{
+	height:35px; color: #fff;line-height: 35px; text-align: center; padding: 0;
+}
+.navbar .dropdown-menu a:hover{
+	background: #97D472; color: #fff;
+}
+#myCarousel img{
+	width: 100%;
+}
+#myCarousel .carousel-control span{
+	display:block; width:50px; height:60px; overflow: hidden; position: absolute; top:50%; margin-top: -30px; overflow: hidden;-webkit-transition: all .3s linear;-o-transition: all .3s linear;-moz-transition: all .3s linear;-ms-transition: all .3s linear;transition: all .3s linear;
+}
+#myCarousel .left span{
+	left:-50px; background:rgba(0,0,0,0.3) url(../banner-btn.png) center top;
+}
+#myCarousel .right span{
+	right:-50px; background:rgba(0,0,0,0.3) url(../banner-btn.png) center bottom;
+}
+
+/* 主体部分 */
+.pa_title{
+	height:25px; overflow: hidden; background: url(../title_line.jpg) center center repeat-x; margin:20px 0px 20px 0px;
+}
+.pa_title p{
+	display: inline-block; float: left; background:#fff url(../ico.jpg) left center no-repeat; line-height: 25px; font-size: 20px; overflow: hidden; padding-left: 35px;
+} 
+.pa_title span{
+	color: #999; background: #fff; line-height:25px; font-size: 12px; padding:0 5px 0 8px;
+}
+.pa_title .add a{
+	color: #999;
+}
+.pa_title .more{
+	display: block; float: right; background: #333; line-height: 25px; height:25px; color: #fff; font-size:12px; padding:0 10px; margin-left:6px;
+}
+.pa_title .active{
+	background: #8bcf61;
+}
+.pa_title .more:hover{
+	background:#8bcf61;
+}
+.business .list{
+	overflow: hidden; margin:0 auto;
+}
+.business .list li{
+	margin-bottom:10px; overflow: hidden;
+}
+.business .list .imgLink_hover{
+	position:relative; width:100%;
+}
+.business .list .imgLink_hover:hover .hover-link{
+	opacity: 1; filter: alpha(opacity=100);
+}
+.business .list .hover-link{
+	position: absolute; z-index: 9; opacity: 0; filter: alpha(opacity=0); width:100%; height:100%; background:rgba(0,0,0,.3) url(../hover-link.png) center center no-repeat;
+}
+.business .list img{
+	width:100%;
+}
+.business .list .title{
+	width:100%; text-align: center; height:40px; line-height:40px; color:#333; display:block;
+}
+.abouts img{
+	max-width: 350px; margin:0 20px 15px 0; float: left;
+}
+.abouts .big{
+	color: #c10404; border:1px solid #c10404; display: inline-block; font-size: 12px; padding: 5px 7px; border-radius: 4px; margin-top: 20px;
+}
+.abouts .big:hover{
+	color: #fff; background:#c10404;
+}
+.news .list,.contact .list{
+	overflow: hidden; margin:0 auto;
+}
+.news ul{
+	margin-top:-10px;
+}
+.news li{
+	width:100%; border-bottom: 1px dashed #ccc; overflow: hidden; height:40px; line-height: 40px;
+}
+.news li a{
+	color: #666; margin-left: 5px; white-space: nowrap; text-overflow:ellipsis;
+}
+.news li a:hover{
+	color: #000;
+}
+.contact .dropup button{
+	height:25px; padding:0 12px; line-height:25px; margin-top:10px; font-size: 12px;
+}
+
+/* 文章列表页 */
+.main .right{
+	float: right;
+}
+.list_article .list{
+	overflow: hidden; margin:0 auto;
+}
+.right .list li,.right .article li{
+	overflow: hidden;
+}
+.right .article a{
+	display:block; border:1px dashed #ccc;padding: 5px; margin-bottom: 10px; overflow: hidden;
+}
+.right .article a:hover{
+	border-color: #000;
+}
+.right .article a:hover strong,.right .article a:hover p{
+	color: #000;
+}
+.right .article a strong{
+	line-height: 26px;
+}
+.right .article a p{
+	color: #888; font-size: 12px; height:70px; overflow: hidden; line-height: 22px;
+}
+.right .page{
+	width:100%; overflow: hidden; margin-bottom: 20px; text-align: center;
+}
+.right .page a{
+	background: #eee; color: #000; margin:10px 5px 0; text-align: center; width:35px; height:35px; line-height: 35px; display: inline-block;
+}
+.right .page a:hover{
+	background: #000; color: #fff;
+}
+.right .page .active{
+	background: red; color: #fff; cursor: default;
+}
+.right .page .active:hover{
+	background:red;
+}
+.right .product{
+	clear: both; width:100%; overflow: hidden;
+}
+.right .product .pro_list{
+	overflow: hidden; margin:0 auto;
+}
+.right .product .pa_title .more{
+	width:60px; text-align: center;
+}
+.right .pro_list li{
+	padding: 0;
+}
+.right li .pro_info{
+	padding: 10px; border: 1px dashed #ccc; overflow: hidden;
+}
+.right li .pro_info:hover{
+	border-color: #000;
+}
+.right li .pro_info img{
+	width:50%; float:left; margin-right: 5px; display:inline-block;
+}
+.right li .pro_info .desc{
+	float: left; width:46%;
+}
+.right li .pro_info p{
+	height:60px; overflow: hidden;
+}
+.right li .pro_info a{
+	display: inline-block; background: #333; color: #fff; margin-top:5px; font-size: 12px; width:60px; line-height: 22px; height:22px; border-radius:4px; text-align: center;
+}
+.right li .pro_info a:hover{
+	background: #8bcf61;
+}
+.slide .nav .active{
+	color: #8bcf61; font-weight: bold;
+}
+.slide .contact .dropup{
+	margin-top: 30px;
+}
+
+/* 单页部分 */
+.onepage .pa_content{
+	overflow: hidden; margin-bottom:30px;
+}
+.onepage .pa_content .title{
+	text-align: center; line-height: 35px; font-size: 16px; font-weight:bold;
+}
+.onepage .pa_content .date{
+	font-size: 14px; line-height: 40px; font-weight: bold; text-align: center;
+}
+.onepage .pa_content p{
+	text-indent: 2em;
+}
+
+/* 产品详情页 */
+.msg_product .slider{
+	width:100%; overflow: hidden; position: relative;
+}
+.msg_product .slider ul{
+	-webkit-transition: .6s all;-o-transition: .6s all;-moz-transition: .6s all;-ms-transition: .6s all;transition: .6s all;
+}
+.msg_product .slider li {
+	float: left;
+}
+.msg_product .slider li img{
+	width:100%;
+}
+.msg_product .slider .btns{
+	position: absolute; top:50%; margin-top: -30px; width:50px; height:60px; overflow:hidden; z-index: 99;
+}
+.msg_product .slider .next{
+	background:rgba(0,0,0,.3) url(../banner-btn.png) center bottom no-repeat; right:-50px;
+}
+.msg_product .slider .prev{
+	background:rgba(0,0,0,.3) url(../banner-btn.png) center top no-repeat; left:-50px;
+}
+.msg_product .carousel .detailNav{
+	width:100%; overflow: hidden; margin-bottom:15px;
+}
+.msg_product .carousel .detailNav img{
+	border:5px solid #000; width:60px; height:60px; display: inline-block; margin:10px 10px 15px 0px; overflow: hidden;
+}
+.msg_product .carousel .detailNav img:hover{
+	border-color:#990000;
+}
+.msg_product .carousel .detailNav .active img{
+	border-color:#ff0000;
+}
+.msg_product .pa_content{
+	overflow: hidden;
+}
+.msg_product .pa_content .col-sm-12,.msg_product .datalist{
+	padding: 0;
+}
+.msg_product .pa_content .title{
+	width:100%; height:35px; line-height: 35px; margin:0 0 15px; border-left:3px solid #000; font-weight: bold; text-align: center; background: #eee; font-size: 16px;
+}
+.msg_product .note p{
+	text-indent: 1em;
+}
+.msg_product .datalist .title{
+	text-align: left; text-indent: 15px;
+}
+.msg_product .datalist .content{
+	overflow: hidden; margin-bottom:25px;
+}
+.msg_product .datalist .content p{
+	text-indent: 2em;
+}
+.msg_product .otherPageBox{
+	width:100%; overflow: hidden; border-top: 1px dashed #ccc; margin:0 0 20px;
+}
+.msg_product .otherPageBox .otherPage{
+	float: left;
+}
+.msg_product .otherPageBox .otherPage a{
+	color: #666;
+}
+.msg_product .otherPageBox .otherPage a:hover{
+	color: #000;
+}
+.msg_product .otherPageBox .back{
+	float: right; display:block; margin-top: 5px; background: #c10404; line-height: 35px; width:80px; color: #fff; text-align: center;
+}
+
+/* 留言板 */
+.list_book .pa_content{
+	overflow: hidden;
+}
+.list_book .pa_content .title{
+	text-align: center; margin:24px auto;
+}
+.list_book .pa_content .form{
+	margin:0 auto 20px;
+}
+.list_book .pa_content li{
+	width:100%; overflow: hidden; margin-bottom:10px;
+}
+.list_book .pa_content li label{
+	font-weight:normal; width:15%; text-align:right; margin:0 8px 0;
+}
+.list_book .pa_content li input[type='text'],.list_book .pa_content li input[type='email'],.list_book .pa_content li textarea{
+	width:70%; height:35px; border:1px solid #ccc; text-indent:8px;  background: #fff; border-radius: 5px;-webkit-outline: none;-o-outline: none;-moz-outline: none;-ms-outline: none;outline: none;
+}
+.list_book .pa_content textarea{
+	height: 70px !important; vertical-align: middle;
+}
+.list_book .pa_content .textarea label{
+	vertical-align: middle;
+}
+.list_book .btn input{
+	margin-right: 15px; padding:6px 20px; -webkit-transition: .3s all;-o-transition: .3s all;-moz-transition: .3s all;-ms-transition: .3s all;transition: .3s all; 
+}
+.list_book .btn input:hover{
+	background:#c10404; color: #fff;
+}
+
+
+
+/* 底部部分 */
+.footer p,.footer span,.footer a{
+	color: #999;
+}
+
+
+
+@media (max-width:375px) {
+	.right .product .pa_title .more{width:50px;}
+	.right li .pro_info{padding:8px;}
+	.list_book .pa_content li label{width:20%;}
+	.list_book .pa_content li input[type='text'], .list_book .pa_content li input[type='email'], .list_book .pa_content li textarea{width:69%;}
+}
+@media (max-width:767px) {
+	.header .search{margin:0 0 10px;}
+	.header .search input[type='text']{width:85%;}
+	.header .search input[type='submit']{width:15%;}
+	.navbar .nav>li>a{color: #fff; height:40px; line-height: 40px; text-align:left; text-indent: 15px;}
+	.navbar .nav>li{border:none;}
+	.collapse{background: url(../alpha.png); z-index: 99; position:relative;}
+	.navbar-nav{margin:0 !important;}
+	.navbar li .toggle{position: absolute; right:0; top:0; color:#fff; font-size: 16px; width:52px; height:40px; text-align: center; line-height: 40px;}
+	.navbar .nav .open{background: url(../alpha.png);}
+	.navbar .navbar-toggle:hover,.navbar .glyphicon-search:hover{background: #ddd;}
+	.navbar .navbar-toggle .icon-bar{background: #888;}
+	.navbar .glyphicon-search{float: right; display: block; margin:8px 0 0; padding: 8px 13px; font-size:17px; border-radius: 4px;}
+	.navbar .dropdown-menu a{text-align:left;}
+	.navbar .dropdown-menu a i{display: inline-block !important; margin-right:4px;}
+	.header .topBox .logoBox{margin-bottom:-42px;-webkit-transition: all .3s linear;-o-transition: all .3s linear;-moz-transition: all .3s linear;-ms-transition: all .3s linear;transition: all .3s linear;}
+	.pa_title{border-left: 3px solid #333;}
+	.abouts img{max-width:100%;}
+	.list_book .pa_content .form{width:100%;}
+}
+@media (min-width:768px) {
+	.navbar .dropdown-menu{background:url(../alpha.png);}
+	.list_book .pa_content .form{width:90%;}
+	.navbar .nav>li>a{width: 90px;}
+}
+@media (min-width:992px) {
+	.list_book .pa_content .form{width:70%;}
+	.navbar .nav>li>a{width:120px;}
+}
+@media (min-width:1200px) {
+	.list_book .pa_content .form{width:61%;}
+	.navbar .nav>li>a{width:140px;}
+}

@@ -1,0 +1,1299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densitydpi=medium, viewport-fit=cover" /> 
+  <title>惠州碧桂园楼盘/深圳东进，就住碧桂园</title> 
+  <link type="text/css" rel="stylesheet" href="images/css/base_1.css" /> 
+  <script type="text/javascript">
+        var home_index='1';
+        var noEditTag='';
+        var user_name = "goukuai123";
+        var aGlobalBannerHeight = {};
+        var is_bianji = "0";
+        var is_wap_view = parseInt(0);
+    </script> 
+  <script type="text/javascript" src="images/js/language_1.js"></script> 
+  <script type="text/javascript" src="images/js/cookies_1.js"></script> 
+  <script src="images/js/jquery-1.7.1.min_1.js" language="JavaScript"></script> 
+  <script type="text/javascript" src="images/js/nav_1.js"></script> 
+  <script type="text/javascript" src="images/js/swipe_1.js"></script> 
+  <script type="text/javascript" src="images/js/ajax_info_1.js"></script> 
+  <script type="text/javascript" src="images/js/public_1.js"></script> 
+  <link type="text/css" rel="stylesheet" href="images/css/web_frame_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/change_module_1.css" /> 
+  <link id="webSkinCss" type="text/css" rel="stylesheet" href="images/css/webskin_1.css" /> 
+  <link id="webSkinCss" type="text/css" rel="stylesheet" href="images/css/style_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/index_2.css" /> 
+  <script type="text/javascript" src="images/js/new_wap_public_1.js"></script> 
+  <script type="text/javascript" src="images/js/wapshare_1.js"></script> 
+  <link type="text/css" rel="stylesheet" href="images/css/icomoon_style_1.css" /> 
+  <link rel="stylesheet" type="text/css" href="images/css/iconfont_5.css" /> 
+  <link rel="stylesheet" type="text/css" href="images/css/iconfontnew_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/module_style_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/hmo_style_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/user_define_css_8.css" /> 
+  <script src="images/js/model_banner_1.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="images/js/move_module_1.js"></script> 
+  <script src="images/js/ueditor.parse_1.js"></script> 
+  <link type="text/css" rel="stylesheet" href="images/css/show_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/animate.min_1.css" /> 
+ </head> 
+ <body> 
+  <div class="webBody" state="close" id="webBody" data-curbg="wbg_137" data-ver="0"> 
+   <script>
+            function focusFun(o){
+                var focusId = $("#"+o).find(".focusimg"),
+                focusW = focusId.width(),
+                focusP = focusId.find(".focusPage"),
+                typeN = focusId.attr("type"),
+                focusUl = focusId.find(".focusInfo ul"),
+                focusLi = focusId.find(".focusInfo li"),
+                liLength = focusLi.length,
+                numW = Math.ceil(focusW*liLength),
+                scrollW = focusW,
+                pageH = '',
+                pageN = 0;
+                if(typeN == 1){
+                    for(var i=0; i<liLength; i++){
+                        if(i == 0){
+                            pageH += '<span class="cur"></span>';
+                        }else{
+                            pageH += '<span></span>';
+                        }
+                    }
+                    focusId.find("li").width(focusW);
+                }else if(typeN == 2){
+                    for(var i=0; i<liLength; i++){
+                        var imgSrc = focusId.find(".focusInfo li:eq("+i+") img").attr("src");
+                        if(i == 0){
+                            pageH += '<span class="cur" style="width:'+100/liLength+'%;"><em><img src="'+imgSrc+'"></em></span>';
+                        }else{
+                            pageH += '<span style="width:'+100/liLength+'%;"><em><img src="'+imgSrc+'"></em></span>';
+                        }
+                    }
+                    focusId.find("li").width(focusW);
+                }else if(typeN == 3 || typeN == 4){
+                    if(liLength < 3){
+                        focusUl.append(focusUl.html());
+                        if(liLength < 2){
+                            focusUl.append(focusUl.html());
+                        }
+                    }
+                    liLength = 4;
+                    focusId.find("li").width(focusW/3);
+                    focusId.find("li:first").addClass("cur");
+                    focusId.find("li:last").insertBefore(focusId.find("li:first"));
+                    scrollW = focusW/3;
+                    numW = Math.ceil(focusW*liLength);
+                    if(typeN == 4){
+                        for(var i=0; i<liLength; i++){
+                            if(i == 0){
+                                pageH += '<span class="cur"></span>';
+                            }else{
+                                pageH += '<span></span>';
+                            }
+                        }
+                        focusId.find("li").each(function(){
+                            $(this).find(".pic").height($(this).width());
+                        })
+                    }
+                }else if(typeN == 5){
+                    for(var i=0; i<liLength; i++){
+                        if(i == 0){
+                            pageH += '<span class="cur"></span>';
+                        }else{
+                            pageH += '<span></span>';
+                        }
+                    }
+                    focusId.find("li").width(focusW/3*2);
+                    numW = Math.ceil((focusW/3+5)*2*liLength);
+                    scrollW = focusW/3*2;
+                }
+                focusP.html(pageH);
+                focusUl.width(numW+'px');
+                function focusTime(){
+                    var sLeft = focusId.find(".focusInfo").scrollLeft();
+                    focusId.find(".focusInfo").animate({scrollLeft:scrollW},function(){
+                        focusId.find(".focusInfo li:first").insertAfter(focusId.find(".focusInfo li:last"));
+                        focusId.find(".focusInfo").scrollLeft(0);
+                    });
+                    if(typeN == 3 || typeN == 4){
+                        focusId.find(".focusInfo li.cur").removeClass("cur").next().addClass("cur");
+                    }
+                    if(pageN == liLength-1){
+                        pageN = 0;
+                        /*sLeft = 0;
+                        focusId.find(".focusInfo").animate({scrollLeft:sLeft});*/
+                        focusP.find("span").removeClass("cur").eq(pageN).addClass("cur");
+                    }else{
+                        ++pageN
+                        /*sLeft += focusW;
+                        focusId.find(".focusInfo").animate({scrollLeft:sLeft});*/
+                        focusP.find("span").removeClass("cur").eq(pageN).addClass("cur");
+                    }
+                }
+                var timeObj = setInterval(focusTime,2000);
+            }
+            $(function(){
+                var document_h = $(window).height();
+                $("#wrapper").css({"min-height":document_h+'px'});
+            })
+        </script> 
+       <style type="text/css">
+            .mainContainer{overflow: hidden;min-height: 368px;}
+        </style> 
+    <div class="wrapper" id="wrapper" data-curbg="wbg_137"> 
+        <link type="text/css" rel="stylesheet" href="images/css/web_membercenter_1.css" /> 
+        <script language="javascript">
+        function app_share_fn(){
+          var title=document.title;
+          var url=window.location.href;
+          var con=$("meta[name='description']").attr("name");
+          if(!con)con=title;
+          var pic=$("img")[0].src;
+          android.share(title,con,pic,url);
+        }
+        $(function(){
+            $(document).scroll(function(){
+                var id = $("#sysSearch");
+                if(id.length){
+                    var t = $(this), tScroll = t.scrollTop();
+                    var height=parseInt();
+                    var trans=parseInt();
+                    var background='';
+                    height=height ? height :10;
+                    trans=trans ? (trans/100) :'0.5';
+                    background=background ? background :'#f00';
+                    /*if(tScroll <= 60){
+                        id.css("position","relative");
+                    }else{
+                        id.css("position","fixed");
+                    }*/
+                                }
+            })
+        })
+    </script> 
+    <script type="text/javascript" src="images/js/xss_1.js"></script> 
+    <!-- 主体 -->
+    <div class="mainContainer"> 
+     <div class="addContainer q" id="add_container"> 
+        <!-- 头部 -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_25" class="customModuleRow "> 
+       <div class="customModule  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo " id="Mo_25" motype="13"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="###">top</a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="###">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+                <!-- LOGO -->
+              <div class="freeEditModule baiduEditorTxtModule">
+               <p><img src="images/1509692535320144_1.png" title="1509692535320144.png" alt="" /></p>
+              </div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- banner -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_26" class="customModuleRow "> 
+       <div class="customModule  customFocusimgModule  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo " id="Mo_26" motype="12"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="###">1</a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="###">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <!-- banner内容 -->
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div class="moveModule_2" id="move_module_4077835">
+               <div class="movePicShow" rel="180" style="height:180px;">
+                <ul class="q">
+                 <li style="height:180px;" smallpic="http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2017_11_03/tmp1509692749_1512875_s.png">
+                    <a href="#"><img title="2" src="images/tmp1509692749_1512875_s_1.png" /></a>
+                 </li>
+                 <li style="height:180px;" smallpic="http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2017_07_27/tmp1501126158_1507287_s.jpg">
+                    <a href="###"><img title="1" src="images/tmp1501126158_1507287_s_1.jpg" /></a>
+                </li>
+                </ul>
+               </div>
+               <div class="bannerNav"></div>
+              </div> 
+              <script language="javascript">
+                $(function() {
+                    aGlobalBannerHeight.m4077835 = parseInt(180);
+                    setBannerModuleHeight4077835();
+                    $(window).resize(function(){
+                        //setTimeout(function(){
+                        setBannerModuleHeight4077835();
+                        //},500);
+                    })
+                });
+
+                function setBannerModuleHeight4077835() {
+                    var Banner = $("#move_module_4077835"),
+                    oBanner = $("#move_module_4077835 .movePicShow"),
+                    iPicMaxWidth =  parseInt("640"),
+                    // iWindowWidth = $(window).width();
+                    iWindowWidth = Banner.parent().width();
+
+                    if (iWindowWidth > iPicMaxWidth) {
+                    var iRealityHeight = aGlobalBannerHeight.m4077835*2;
+                    var iRealityWidth = iPicMaxWidth;
+                    } else if (iWindowWidth > 0) {
+                    iBfbWidth = (iWindowWidth / iPicMaxWidth).toFixed(2);
+                    var iRealityHeight = parseInt(aGlobalBannerHeight.m4077835 * iBfbWidth) * 2;
+                    var iRealityWidth = iWindowWidth;
+                    }
+                    oBanner.height(iRealityHeight);
+                    oBanner.find('li').height(iRealityHeight);
+                    Banner.width(iRealityWidth);
+                    Banner.find('li').width(iRealityWidth);
+                }
+                </script> 
+              <script language="javascript">
+                    $(function() {
+                        var span = "",
+                            bn = $("#move_module_4077835 .bannerNav"),
+                            banner = $("#move_module_4077835 .movePicShow");
+                        bn.addClass("banner-nav-1");
+                                                banner.find("li").each(function(e){
+                            span += '<span></span>';
+                        });
+                        bn.html(span);
+                        var changeBannerBg = function(num) {
+                            bn.find("span").removeClass("cur").eq(num).addClass("cur");
+                        }
+                        changeBannerBg(0);
+                        setTimeout(function(){
+                            new $.Swipe(banner[0], {
+                                startSlide: 0,
+                                direction: "LMove",
+                                speed: 400,
+                                auto: 2000,
+                                callback: function() {
+                                    changeBannerBg(this.index);
+                                }
+                            });
+                        },2000)
+                    });
+            </script> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- 搜索 -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_27" class="customModuleRow "> 
+       <div class="customModule  customSearchModule  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo " id="Mo_27" motype="24"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="###"></a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="###">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <!-- 搜索 -->
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div class="searchModule">
+               <span class="ficon"></span>
+               <div class="searchDiv"> 
+                <form name="search_form" id="search_form_27" method="get" action=""> 
+                 <input type="hidden" name="username" value="goukuai123" /> 
+                 <div class="tInputObj"> 
+                  <input type="text" class="input_t" name="keyword" id="keyword_27" placeholder="请输入关键字" /> 
+                 </div> 
+                 <div class="keyBut"> 
+                  <input type="button" id="search_27" class="eButObj" value="搜索" />
+                 </div> 
+                 <input type="hidden" name="navtype" value="11" /> 
+                 <div style="display:none;"> 
+                  <input type="text" /> 
+                 </div> 
+                </form>
+               </div>
+              </div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- 导航栏 -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_28" class="customModuleRow "> 
+       <div class="customModule  customModuleButgroup  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo " id="Mo_28" motype="17"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="###">A1</a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="###">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <!-- 导航 -->
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div class="butgroupModule">
+               <ul class="butgroupList q">
+                <li id="but_item_8083320" class="butItem  newBbutItem">
+                 <div class="list_setup" style="height:120px; margin:0px 0px 0px 0px;">
+                  <a class="itemA" data-height="120" href="" style=" border-top:0px solid #000; border-right:0px solid #000; border-bottom:0px solid #000; border-left:0px solid #000;">
+                        <span class=" imgicon  " style="left: 0.5%; top: 14.33%;" data-picwidth="240" data-picheight="240" data-left="0.5">
+                            <img src="images/31945_1501127312_1.png" width="45" height="45" />
+                        </span>
+                        <span style="left: 0.55%; top: 56.25%;" class="butText" data-left="0.55">
+                            <p><span style="color: rgb(255, 255, 255); font-size: 14px;">关于我们&nbsp;</span></p>
+                        </span>
+                    </a>
+                 </div></li>
+                <li id="but_item_8083321" class="butItem  newBbutItem">
+                 <div class="list_setup" style="height:55px; margin:0px 0px 10px 10px;">
+                  <a class="itemA" data-height="55" href="" style=" border-top:0px solid #000; border-right:0px solid #000; border-bottom:0px solid #000; border-left:0px solid #000;">
+                    <span class=" imgicon  " style="left: 0.21%; top: 6.88%;" data-picwidth="240" data-picheight="240" data-left="0.21">
+                        <img src="images/31950_1501127359_1.png" width="45" height="45" />
+                    </span>
+                    <span style="left: 0.64%; top: 36.67%;" class="butText" data-left="0.64">
+                        <p><span style="color: rgb(255, 255, 255);">房源精选</span></p>
+                    </span>
+                  </a>
+                 </div></li>
+                <li id="but_item_8083322" class="butItem  newBbutItem">
+                 <div class="list_setup" style="height:55px; margin:0px 0px 0px 10px;">
+                  <a class="itemA" data-height="55" href="/wap/guest_book.php?username=goukuai123" style=" border-top:0px solid #000; border-right:0px solid #000; border-bottom:0px solid #000; border-left:0px solid #000;">
+                    <span class=" imgicon  " style="left: 0.21%; top: 14.85%;" data-picwidth="240" data-picheight="240" data-left="0.21">
+                        <img src="images/31955_1501127430_1.png" width="45" height="45" />
+                    </span>
+                    <span style="left: 0.63%; top: 38.82%;" class="butText" data-left="0.63">
+                        <p><span style="color: rgb(255, 255, 255);">在线留言<br /></span></p>
+                    </span>
+                  </a>
+                 </div></li>
+                <li id="but_item_8083323" class="butItem  newBbutItem">
+                 <div class="list_setup" style="height:65px; margin:10px 0px 0px 0px;">
+                    <a class="itemA" data-height="65" href="/goukuai123/wap_single/16147651.html" style=" border-top:0px solid #000; border-right:0px solid #000; border-bottom:0px solid #000; border-left:0px solid #000;">
+                        <span class=" imgicon  " style="left: 0.25%; top: 21.26%;" data-picwidth="240" data-picheight="240" data-left="0.25">
+                            <img src="images/31966_1501127541_1.png" width="45" height="45" />
+                        </span>
+                        <span style="left: 0.62%; top: 40.44%;" class="butText" data-left="0.62">
+                            <p><span style="color: rgb(255, 255, 255);">联系我们</span></p>
+                        </span>
+                    </a>
+                 </div></li>
+                <li id="but_item_8083324" class="butItem  newBbutItem">
+                 <div class="list_setup" style="height:65px; margin:10px 0px 0px 10px;">
+                    <a class="itemA" data-height="65" href="/goukuai123/wap_doc/15561557_0_0_1.html" style=" border-top:0px solid #000; border-right:0px solid #000; border-bottom:0px solid #000; border-left:0px solid #000;">
+                        <span class=" imgicon  " style="left: 0.24%; top: 20%;" data-picwidth="240" data-picheight="240" data-left="0.24">
+                            <img src="images/31961_1501127497_1.png" width="45" height="45" />
+                        </span>
+                        <span style="left: 0.64%; top: 41.13%;" class="butText" data-left="0.64">
+                            <p><span style="color: rgb(255, 255, 255);">公司新闻</span></p>
+                        </span>
+                    </a>
+                 </div></li>
+               </ul>
+              </div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- 房源精选 -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_30" class="customModuleRow "> 
+       <div class="customModule  customEmptyModule  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo Mo_1017" id="Mo_30" motype="28"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="###">留空</a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="###">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div id="space_area_6480008" class="Mo_empty"></div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_31" class="customModuleRow "> 
+       <div class="customModule  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo " id="Mo_31" motype="6"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="">房源精选</a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <!-- 房源精选 -->
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div class="proListmodule_1 " id="prolist_6480009">
+               <ul class="q">
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+                <li class="list_setup">
+                    <div class="pic" style=" width:100px;height:100px;">
+                        <i class="hook"></i>
+                        <a href=""><img src="images/791597_1509852427_1.jpg" /></a>
+                    </div>
+                    <div class="proAttr">
+                        <h3><a href="" class="proName urlfont">碧桂园翠湖湾</a></h3>
+                        <div class="proIntro textfont">
+                            项目位于龙岗北新圩镇花山大道8号（花山水库旁），占地10万平米，总建筑面积38万平米，共2800户，
+                        </div>
+                        <a href=""><p class="btn_position"><em class="eButObj">了解详情</em></p></a>
+                    </div>
+                </li>
+               </ul>
+              </div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- 公司新闻 -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="row_32" class="customModuleRow "> 
+       <div class="customModule  load-animate" data-animate-name="slideInUp" data-animate-duration="1.00s" data-animate-delay="0.10s"> 
+        <!--moCss--> 
+        <div class="Mo " id="Mo_32" motype="4"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="">公司新闻</a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> <a href="">更多</a> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <!-- 公司新闻 -->
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div class="autoH" style="overflow:hidden;">
+               <div class="txtListmodule_2" id="text_listmodule_6480010"> 
+                <ul>
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                 <li class="text_list_bk list_setup"> 
+                    <span class="txtlist-times textfont">12-18</span> 
+                    <span class="txtlist-a"> 
+                        <span class="listIcon">&nbsp;<em></em></span> 
+                        <a href="" class="urlfont" title="惠深碧桂园楼盘知多少">惠深碧桂园楼盘知多少</a> 
+                    </span> 
+                </li> 
+                </ul>
+               </div>
+              </div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <link rel="stylesheet" type="text/css" href="images/css/iconfont_6.css" /> 
+   <!-- 底部 -->
+   <div style="width:100%;line-height:45px;text-align:center;" class="ev_zhichi">
+     技术支持：<a href="http://www.gzjunyu.com" rel="nofollow" target="_blank" style="text-decoration:underline;">骏域网络</a> 
+   </div> 
+
+   <!-- 底部工具条 -->
+   <div class="toolMenuBg" id="tool_menu_bg"></div> 
+   <div class="toolMenu" id="tool_menu"> 
+    <menu class="toolBut q "> 
+     <li id="toolHome" cur="" sorts="16" style=" width:20%;"> 
+        <a id="index_link" class="cur" href=""> 
+            <b class="icon" id="icon_1418228"> <img src="images/272_7104721484276786_1.png" width="20" height="20" /> </b> 
+            <strong>首页</strong> 
+        </a> 
+     </li> 
+     <li id="toolTel" sorts="15" style=" width:20%;"> 
+        <a href="tel:17503016109"> 
+            <b class="icon" id="icon_1418229"> <img src="images/109_4904381484273045_1.png" width="20" height="20" /> </b> 
+            <strong>电话</strong> 
+        </a> 
+    </li> 
+     <li id="toolTelMessage" sorts="14" style=" width:20%;"> 
+        <a href="sms:17503016109"> 
+            <b class="icon" id="icon_1418230"> <img src="images/364_2175741484278481_1.png" width="20" height="20" /> </b> 
+            <strong>信息</strong> 
+        </a> 
+    </li> 
+     <li id="toolOnlineCustom11" sorts="13" style=" width:20%;"> 
+        <a href="list_book.html"> 
+            <b class="icon" id="icon_1418239"> <img src="images/351_8749191484278345_1.png" width="20" height="20" /> </b> 
+            <strong>留言</strong> 
+        </a> 
+    </li>
+     <li id="toolWX" sorts="13" style=" width:20%;"> 
+        <div class="box" style="display: none;"><img src="images/qrcode.jpg"></div>
+        <div class="mark" style="display: none;"></div>
+        <a href="list_book.html"> 
+            <b class="icon" id="icon_1418239"> <img src="images/351_8749191484278345_1.png" width="20" height="20" /> </b> 
+            <strong>微信</strong> 
+        </a> 
+    </li>
+    </menu> 
+   </div> 
+
+   <style type="text/css">
+      #toolWX .mark{
+        position: fixed; width:100%; height:100%; display: block; background:rgba(0,0,0,.8); top:0; left:0;
+      }
+      #toolWX .box{
+        position: fixed; top:50%; width:150px; left:50%; margin-top: -75px; margin-left:-75px; z-index: 9;
+      }
+      #toolWX .box img{
+        width:100%;
+      }
+   </style>
+
+   <!-- 返回顶部 -->
+   <span class="backTop" id="back_top"><em></em></span> 
+    <!--微名片详细页不显示导航-->
+    <!-- <div id="mainBg"></div>
+       <style type="text/css">
+           #mainBg{position: absolute; z-index: -1; top:0; left: 0; width: 100%; background-color: #f5f5f5;}
+       </style> --> 
+   <script type="text/javascript">
+          $(function(){
+            if($(".main").length){
+              $(".main").css("min-height",$(window).height());
+            }
+          });
+
+          // 弹出二维码
+          var floag = true;
+          $('#toolWX').on('click', function (){
+            if(floag){
+              $(this).find('.box').show();
+              $(this).find('.mark').show();
+              $(this).find('.mark').on('click', function (){
+                $('#toolWX .box').hide();
+                $(this).hide();
+              });
+            }else{
+              $(this).find('.box').hide();
+              $(this).find('.mark').hide();
+            }
+            floag = !floag;
+            return false;
+          });
+       </script> 
+   <div class="Nzz" id="Nzz"></div> 
+   <script type="text/javascript">
+    $(function(){
+      if (!$('.ev_t_top').length && !$('.ev_t_product_pj_tit').length) {
+        $('#wxAndAppShowHtml').removeClass('content_margin');
+      }
+      });
+    $(".baiduEditorTxtModule img").each(function(){
+      var w = $(this).width();
+      if(w > 320){
+        $(this).css({'width':'100%','height':'auto'});
+    }
+    });
+    //检查是否微信
+    function is_weixn(){
+      var ua = navigator.userAgent.toLowerCase();
+      if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        $('#wxAndAppShowHtml').show();
+         return false;
+      } else {
+        $('#wxAndAppShowHtml').hide();
+        return true;
+      }
+    }
+    function GetQueryString(name)
+    {
+         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+         var r   = window.location.search.substr(1).match(reg);
+         if(r!=null){
+           return  unescape(r[2]);
+         }
+        return '';
+    }
+    var is_weixn = is_weixn();
+    if (is_weixn){
+      writeCookie('openid','',168);
+      var shareModule = $('#shareModule li');
+      if (shareModule.length > 0 ){
+        shareModule.find('.weixin').parent().remove();
+      }
+    }else {
+      var openid = GetQueryString('openid');
+      if (!readCookie('openid')){
+        writeCookie('openid',openid);
+      }
+    }
+
+</script> 
+   <script language="javascript">
+      var windowW = $(window).width(),windowH = $(window).height();
+      $(window).resize(function(){
+              setTimeout(function(){
+            ButGroupLeftPosition();
+            },500);
+          })
+    $(function(){
+        ButGroupLeftPosition();
+      });
+      
+      function ButGroupLeftPosition(states) {
+        if($(".butgroupList").length){
+          var winW = $(window).width();
+          winW = winW < 768 ? winW : 768;
+          $(".butgroupList").each(function(){
+            var Lthis_ = $(this),butItme = Lthis_.find(".newBbutItem");
+            butItme.each(function(){
+              var this_ = $(this).find("a.itemA"),iLiWidth = this_.width();
+              // var this_ = $(this),iLiWidth = this_.width(),aitem =this_.find("a.itemA");
+              iAHeight = parseInt(this_.attr("data-height"));
+              /*if(winW != 320){
+                var bl = winW/320*iAHeight;
+                this_.height(bl);
+                this_.parent().height(bl);
+              }*/
+              var isReturn = false;
+                if(this_.find(".butText").length){
+                    var iFont = this_.find(".butText");
+                    iFont.css({'left':"0px"});
+                    var iFontWidth = iFont.width();
+                    var iFontLeftBfb = parseFloat(iFont.attr("data-left")).toFixed(4);
+                    var iFontLeftPx=(iFontLeftBfb*iLiWidth)-(iFontWidth/2);
+                    if(iFontLeftPx < 0){
+                      iFont.css({'left':0});
+                    }else{
+                      iFont.css({'left':iFontLeftPx+"px"});
+                    }
+                    isReturn = true;
+                  }
+                //var time_img = setTimeout(function(){
+                //if(isReturn == true){
+                if(this_.find(".imgicon").length || this_.find(".ficon").length){
+                    if(this_.find(".imgicon").length){
+                      var iPic = this_.find(".imgicon"),
+                          iPic_sub = this_.find(".imgicon img");
+                      var w = parseInt(iPic_sub.attr("width"));
+                      if(w>iLiWidth){w=iLiWidth}
+                    }else if(this_.find(".ficon").length){
+                      var iPic = this_.find(".ficon");
+                      //var w = iPic.width();
+                      var w = iPic.attr('data-picwidth');
+                    }
+                    var iPicLeftBfb = parseFloat(iPic.attr("data-left")).toFixed(4);
+                    var iPicLeftPx=(iPicLeftBfb*iLiWidth)-(w/2);
+                    if(iPicLeftPx < 0){
+                      iPic.css({'left':0});
+                    }else{
+                      iPic.css({'left':iPicLeftPx+"px"});
+                    }
+                    //clearInterval(time_img);
+                  }
+                //}
+                //},500);
+
+              });
+            });
+        }
+      }
+
+       // 计算城市左侧距离
+      function cityDrag() {
+          if($("#cityMo").length){
+              var winW = $("#wrapper").width();
+              winW = winW < 768 ? winW : 768;
+              var this_ = $("#cityMo"), thisW = this_.attr("data-width"), thisH = this_.height();
+              var iPicLeft = parseFloat(this_.attr("data-left")).toFixed(4);
+              if(iPicLeft > winW){
+                  thisW = 93;
+                  var iPicLeftPx = winW-thisW;
+                  this_.css({'left':iPicLeftPx+"px"});
+              }else{
+                  if(isNaN(iPicLeft)){
+                      var iPicLeftPx = winW-thisW;
+                  }else if(iPicLeft == 0){
+                      var iPicLeftPx = 0;
+                  }else{
+                      var iPicLeftPx = (iPicLeft*winW)-(thisW/2);
+                  }
+                  this_.css({'left':(iPicLeftPx/320).toFixed(2)+"px"});
+              }
+          }
+      }
+
+    uParse('.ev_t_product_xq_con', {
+      rootPath: 'http://admin.ev123.com/ueditor/'
+    });
+    uParse('.ev_t_product_xq_new_div', {
+      rootPath: 'http://admin.ev123.com/ueditor/'
+    });
+    uParse('.articleC', {
+      rootPath: 'http://admin.ev123.com/ueditor/'
+    });
+    uParse('.baiduEditorTxtModule', {
+      rootPath: 'http://admin.ev123.com/ueditor/'
+    });
+</script> 
+
+   <!--个人中心不引入侧边栏-->
+   <link href="images/css/member_menu_1.css" rel="stylesheet" type="text/css" /> 
+   <link href="images/css/iconfont_7.css" rel="stylesheet" type="text/css" /> 
+   <script type="text/javascript">
+    $(function(){
+        $(".member_menu_more,#ser_alertL").click(function(){
+            if($("#member_menu_bg").css("display") == "none"){
+                $("#member_menu_bg").css("display",'block');
+                $("#member_menu").css("display",'block');
+            }
+        });
+        $("#member_menu_bg").click(function(){
+            if($("#member_menu_bg").css("display") == "block"){
+                $("#member_menu_bg").css("display",'none');
+                $("#member_menu").css("display",'none');
+            }
+        });
+    })
+</script> 
+
+   <img id="wapCountImg" src="" style="width: 1px;height: 1px;" /> 
+  </div> 
+    <!--微名片详细页不显示导航-->
+  <div data-left="" class="fixedNavBut" id="fixed_nav_but" visible="show" style="display:block;"> 
+   <div class="navMoreBut_4"> 
+    <i class="i-1"></i> 
+    <i class="i-2"></i> 
+    <i class="i-3"></i> 
+    <b class="b-1"></b> 
+    <b class="b-2"></b> 
+    <b class="b-3"></b> 
+   </div> 
+  </div> 
+
+  <!-- 侧边导航 -->
+  <div id="NMore" class="NMore_1002" state="close"> 
+   <div class="moreSetup"> 
+    <em class="NMTip"></em> 
+    <ul>  
+     <li class="listSetup"> 
+        <a id="foot_index_link" href="/wap_goukuai123.html?showWelcome=1"> 
+            <em></em> 
+            <span class="navText">首页</span> 
+        </a> 
+    </li> 
+     <li class="listSetup"> 
+        <a href="/goukuai123/wap_item/list_15561555_0.html"> 
+            <em></em> 
+            <span class="navText">关于我们</span> 
+        </a> 
+    </li> 
+     <li class="listSetup"> 
+        <a href="/goukuai123/wap_pro/15561556_0_0_0.html"> 
+            <em></em> 
+            <span class="navText">房源精选</span> 
+        </a> 
+    </li> 
+     <li class="listSetup"> 
+        <a href="/wap/guest_book.php?username=goukuai123&amp;channel_id=15561559"> 
+            <em></em> 
+            <span class="navText">在线留言</span> 
+        </a> 
+    </li> 
+     <li class="listSetup"> 
+        <a href="/goukuai123/wap_single/16147651.html"> 
+            <em></em> 
+            <span class="navText">联系我们</span> 
+        </a> 
+    </li> 
+    </ul> 
+   </div> 
+  </div> 
+  <script>
+    function newMenu() {
+        if($("#fixed_nav_but").length){
+            var winW = $("body").width();
+            winW = winW < 640 ? winW : 640;
+            var this_ = $("#fixed_nav_but"), thisW = this_.width(), thisH = this_.height();
+            var iPicLeft = parseFloat(this_.attr("data-left")).toFixed(4);
+            if(isNaN(iPicLeft)){
+                var iPicLeftPx = winW-thisW;
+            }else if(iPicLeft == 0){
+                var iPicLeftPx = 0;
+            }else{
+                var iPicLeftPx = (iPicLeft*winW)-(thisW/2);
+            }
+            this_.css({'left':(iPicLeftPx/332).toFixed(2)+"px"});
+        }
+    }
+    $(function(){
+        newMenu();
+        $(window).size(function(){
+            newMenu();
+        })
+    })
+</script>  
+ </body>
+</html>

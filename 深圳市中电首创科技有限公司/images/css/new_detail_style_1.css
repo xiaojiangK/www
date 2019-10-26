@@ -1,0 +1,79 @@
+.flow{padding:15px 15px 5px 10px; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; background-color: #FFF;}
+.flowCon{ width:100%; background:url(../flow.png) no-repeat left bottom;}
+.flowCon span{ display:block;}
+.flowCon span p{ display: block; overflow: hidden; }
+.flowCon span p em{ display: block; width: 12px; height: 12px; float: left;}
+.flowCon span p em img{ width: 100%; }
+.flowCon span p label{ display: block; float: left;color:#999; line-height: 18px; font-size: 14px;margin: -3px 0px 7px 5px;}
+.flowCon span strong{ display: block;padding-left: 17px;color:#333; line-height: 18px; font-size: 14px; font-weight: 500; margin-bottom: 10px;}
+.flowCon span strong font{color:#e9333f;}
+.term{padding:10px; background-color: #f9f9f9;}
+.term table{width: 100%;}
+.term table tr td { font-size: 14px;padding: 5px 0;}
+.term table tr td span{color:#555;}
+.term table tr td p{color:#777;}
+.term table tr .currentRed span ,.term table tr .currentRed p{color:#f12222; /*text-align: center;*/ display: block;}
+.term table tr .Line span ,.term table tr .Line p{ text-decoration: line-through; }
+.LineL{ text-align: left; }
+.LineC{ text-align: center; }
+.LineR{ text-align: right; }
+.term table tr td a{ display: block;width: 24px; height: 12px; overflow: hidden; float: right;margin-top: -13px;}
+.term table tr td a img{ width: 100%; }
+.term table tr td .cur img{margin-top:-12px;}
+
+.footActivity{ background: #FFF; position: fixed;left:0;right:0;bottom: 0; width: 100%;z-index: 100; }
+.ActivityLeft{ overflow: hidden; float: left;padding:10px;}
+.ActivityLeft a{ display: block; float: left; border:1px solid #e8e8e8; text-align: center; line-height: 28px; width: 28px; font-size: 24px;}
+.aReduce{border-radius: 4px 0px 0px 4px;color:#bab9b9;}
+.ActivityLeft input{width:50px;border:0;border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; text-align: center;float: left; line-height: 28px; font-size: 14px; color: #333;}
+.aPlus{border-radius: 0px 4px 4px 0px;color:#000000;}
+.ActivityRight{ display: block; overflow: hidden; background-color: #cccccc; font-size: 14px; color: #555555; text-align: center; line-height:30px;padding:10px 0;  }
+.ActivityRight1{ background-color: #f90;color:#FFF;display: block;overflow: hidden;font-size: 14px;
+    text-align: center;line-height: 30px;padding: 10px 0; }
+.ActivityRight1 font{ font-size: 12px;padding-right: 8px; }
+
+.preSale{ background: #FFF;padding:0 10px; margin-top: 10px; }
+.preSaleTit{ font-size: 14px;color: #333;border-bottom: 1px solid #ededed;padding:10px 0; }
+.preSaleCon{ width: 100%; }
+.preSaleCon table{ width: 100%;border-bottom: 1px solid #ededed; }
+.preSaleCon table tr td{ font-size: 14px; color: #555; }
+.preSaleCon table tr td span{color:#999999;}
+.preSaleCon table tr td .text_Red{color:#ff0000;}
+.preSaleCon table tr .text_L{ text-align: left;padding:10px 0;}
+.preSaleCon table tr .text_C{ text-align:center;}
+.preSaleCon table tr .text_R{ text-align:right;}
+.preSaleCon table tr td p{ padding-bottom: 3px; }
+.preSaleCon table tr td p:last-child{padding-bottom:10px}
+
+.stage{padding: 10px 10px 0px 10px;border-bottom: 1px solid #F9F9F9;}
+.stage span{ display: block; padding-bottom: 10px; }
+.stage span p{ display: block; font-size: 14px; color: #999999; }
+.stage span p font{ float: right; }
+.stage span .text_Red{color:#e64341;}
+.stage span strong{ font-size: 12px;color: #999999; display: block; text-align: right;}
+.Retainage{padding:10px; overflow: hidden;}
+.Retainage span{ display: block; float: left; font-size: 14px;color: #333; line-height: 27px; }
+.Retainage input{ display: block; float: left; margin-left: 5px; border-radius: 5px; border:1px solid #cccccc; line-height: 25px;font-size: 14px;color: #333; }
+
+.main{max-width: 768px;min-height: 100%;margin: auto; background: #f8f8f8;}
+.class_div{ margin-bottom: 10px; }
+.max_class_div {background: #fafafa;overflow: hidden;overflow-x: auto;}
+.max_class_c {overflow: hidden;width: 9999px;border-bottom: 1px solid #e8e8e8;}
+.max_class_c a {display: block;padding: 10px 5px;color: #282828;font-size: 14px;margin-left: 10px;float: left;}
+.max_class_c .cur {border-bottom: 2px solid #ff6600;color: #ff6600;}
+.min_class_div {background: #FFF;padding: 10px 10px 0px 0px;overflow: hidden;border-bottom: 1px solid #e8e8e8;}
+.min_class_div a {display: block;float: left; background:#f0f1f5; border-radius: 5px;color:#333333; padding:4px 5px;margin-left: 10px;font-size: 14px;color: #555;margin-bottom:10px;text-align: center;}
+.min_class_div .cur {color: #ff6600;}
+.preSale_list{ width: 100%; overflow: hidden; }
+.preSale_L ,.preSale_R{ width: 49%; }
+.preSale_L{float: left; }
+.preSale_R{ float: right; }
+.goods{ width: 100%; background: #FFF;padding-bottom:7px; margin-bottom: 5px;}
+.goodsImg{ display: block; overflow: hidden;; }
+.goodsImg img{ width: 100%; }
+.goodsTit{padding:10px 10px 5px 10px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden; font-size: 14px; color: #333; }
+.goods p{ display: block;padding:0 10px 3px 10px; font-size: 14px; color: #999;}
+.goods p font{color:#ff0000;}
+
+.preSaleBuy{font-size: 14px;position: absolute; right: 0;top: 0px;background: #f90;height: 50px;padding: 0 10px;color: #FFF;line-height: 50px;}
+.preSaleBuy font{font-size: 12px;}

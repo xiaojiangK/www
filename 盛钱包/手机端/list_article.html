@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盛钱包</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+	<link rel="stylesheet" type="text/css" href="images/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="images/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="images/css/font-awesome.min.css" />
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<p><a href="/">盛钱包官网</a></p>
+			<span class="fa fa-navicon"></span>
+			<div class="navbar">
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="fa fa-home"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="list_article.html" class="active">
+							<i class="fa fa-newspaper-o"></i>
+							<span>新闻资讯</span>
+						</a>
+					</li>
+					<li>
+						<a href="msg_app.html">
+							<i class="fa fa-star"></i>
+							<span>APP</span>
+						</a>
+					</li>
+					<li>
+						<a href="list_book.html">
+							<i class="fa fa-commenting"></i>
+							<span>留言板</span>
+						</a>
+					</li>
+					<li>
+						<a href="msg_onepage.html">
+							<i class="fa fa-file-text"></i>
+							<span>联系我们</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="news_list">
+				<div class="title">
+					<i class="fa fa-bookmark"></i>
+					<span>行业资讯</span>
+				</div>
+				<ul>
+					<li>
+						<a href="msg_article.html">
+							<p><span>[精]</span> 盛钱包</p>
+							<i class="fa fa-angle-right"></i>
+							<span class="date">2017/03/07</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p><span>[精]</span> “盛钱包Q码”商户使用常见问题解答</p>
+							<span class="date">2017/03/07</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p><span>[精]</span> “盛钱包”手机pos常见问题解答</p>
+							<span class="date">2017/03/07</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>盛钱包mPOS抢占移动支付百亿市场</p>
+							<span class="date">2017/03/07</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>盛钱包mpos，要做就做消费者认可的产品</p>
+							<span class="date">2017/03/07</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>安全可靠的盛钱包mpos</p>
+							<span class="date">2017/03/07</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</li>
+				</ul>
+				<div class="page">
+					<a href="#" class="btn prev disable">上一页</a>
+					<select>
+						<option value="1">&nbsp; 1 / 5 &nbsp;</option>
+						<option value="2">&nbsp; 2 / 5 &nbsp;</option>
+						<option value="3">&nbsp; 3 / 5 &nbsp;</option>
+						<option value="4">&nbsp; 4 / 5 &nbsp;</option>
+						<option value="5">&nbsp; 5 / 5 &nbsp;</option>
+					</select>
+					<a href="#" class="btn next">下一页</a>
+				</div>	
+			</div>
+		</div>
+		<div class="footer">
+			<div id="Top">
+				<span>Top <i class="fa fa-sort-up"></i></span>
+			</div>
+			<div class="copyRight">
+				<p>©2018 深圳市盛钱包科技有限公司 版权所有</p>
+				<a href="">电脑版</a>
+			</div>
+		</div>
+		<div class="toolBar">
+			<ul>
+				<li>
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:10010">
+						<i class="fa fa-phone"></i>
+						<span>电话咨询</span>
+					</a>
+				</li>
+				<li>
+					<a href="list_book.html">
+						<i class="fa fa-commenting"></i>
+						<span>在线加盟</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="images/js/Jquery.js"></script>
+	<script type="text/javascript" src="images/js/swiper.min.js"></script>
+	<script type="text/javascript">	
+
+		// 返回顶部
+		$('#Top').on('click',function (){
+			$('body').animate({
+				scrollTop: 0
+			});
+		});
+
+		// 导航切换
+		var nav = $('.navbar a');
+		var flog = true;
+		var iNow = 0;
+		var timer = null; 
+		var right = 0;
+		
+		// 当屏幕大于768，则计算导航切换位置
+		if (document.documentElement.clientWidth > 768) {
+			right = ($('body').innerWidth() - 768) / 2;
+		}
+		$(window).resize(function (){
+			if (document.documentElement.clientWidth > 768) {
+				right = ($('body').innerWidth() - 768) / 2;
+			}else{
+				right = 0;
+			}
+		});
+		
+		$('.header .fa-navicon').on('click',function (){
+			if (flog) {
+				$('.header .navbar').css('right',right);
+				$('.main').css('transform','translateX(-.75rem)');
+				
+				timer = setInterval(function (){
+					$(nav).eq(iNow).css({
+						'webkitTransform' : 'translateX(0)',
+						'mozTransform' : 'translateX(0)',
+						'oTransform' : 'translateX(0)',
+						'msTransform' : 'translateX(0)',
+						'transform' : 'translateX(0)'
+					});
+					if (iNow == nav.length-1) {
+						iNow = 0;
+						clearInterval(timer);
+					}else{
+						iNow ++;
+					}
+				},100);
+			}else{
+				$('.header .navbar').css('right','-.75rem');
+				$('.main').css('transform','translateX(0)');
+				for (var i = 0; i < nav.length; i++) {
+					$(nav).eq(i).css({
+						'webkitTransform' : 'translateX(.75rem)',
+						'mozTransform' : 'translateX(.75rem)',
+						'oTransform' : 'translateX(.75rem)',
+						'msTransform' : 'translateX(.75rem)',
+						'transform' : 'translateX(.75rem)'
+					});
+				}
+			}
+			flog = !flog;
+		});
+		$('.main').on('click',function (){
+			$('.header .navbar').css('right','-.75rem');
+			$('.main').css('transform','translateX(0)');
+			for (var i = 0; i < nav.length; i++) {
+				$(nav).eq(i).css({
+					'webkitTransform' : 'translateX(.75rem)',
+					'mozTransform' : 'translateX(.75rem)',
+					'oTransform' : 'translateX(.75rem)',
+					'msTransform' : 'translateX(.75rem)',
+					'transform' : 'translateX(.75rem)'
+				});
+			}
+			flog = true;
+		});
+
+		// 移动端适配,动态计算屏幕的宽度，从而得到网页的fontSize大小
+		;(function (doc, win, undefined) {
+           var docEl = doc.documentElement,
+             resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+             recalc = function () {
+               var clientWidth = docEl.clientWidth;
+               if (clientWidth === undefined) {return;}
+               if (clientWidth >= 768){clientWidth=768};
+               docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+             };
+           if (doc.addEventListener === undefined) return;
+           win.addEventListener(resizeEvt, recalc, false);
+           doc.addEventListener('DOMContentLoaded', recalc, false)
+         })(document, window);
+	</script>
+</body>
+</html>

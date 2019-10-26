@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盛钱包</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+	<link rel="stylesheet" type="text/css" href="images/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="images/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="images/css/font-awesome.min.css" />
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<p><a href="/">盛钱包官网</a></p>
+			<span class="fa fa-navicon"></span>
+			<div class="navbar">
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="fa fa-home"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="list_article.html">
+							<i class="fa fa-newspaper-o"></i>
+							<span>新闻资讯</span>
+						</a>
+					</li>
+					<li>
+						<a href="msg_app.html">
+							<i class="fa fa-star"></i>
+							<span>APP</span>
+						</a>
+					</li>
+					<li>
+						<a href="list_book.html">
+							<i class="fa fa-commenting"></i>
+							<span>留言板</span>
+						</a>
+					</li>
+					<li>
+						<a href="msg_onepage.html" class="active">
+							<i class="fa fa-file-text"></i>
+							<span>联系我们</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="onepage">
+				<div class="banner">
+					<img src="images/onepage_ad.jpg" alt="">
+				</div>
+				<div class="about">
+					<div class="title">
+						<i class="fa fa-bookmark"></i>
+						<span>公司简介</span>
+					</div>
+					<div class="content">
+						<img src="images/onepage_pic.jpg" alt="">
+						<p>前海移联科技有限公司打造（简称“盛钱包”）为银盛支付授权的银行卡收单业务战略合作伙伴，是银盛支付移动终端子品牌“盛钱包”在全国区域内的独家拓展运营服务合作商。盛钱包致力于手机银行系统、移动金融服务系统、银行智能交易管理系统等移动应用平台的开发和运营，为广大中小微商户提供移动支付解决方案，为银行及金融平台提供托管运营服务解决方案</p>
+					</div>
+				</div>
+				<div class="contact">
+					<div class="title">
+						<i class="fa fa-bookmark"></i>
+						<span>公司简介</span>
+					</div>
+					<div class="content">
+						<p>深圳总公司地址</p>
+						<p>联系电话: 400-000-2999</p>
+						<p>联系地址：深圳市南山区朗山路11号同方信息港A栋10楼</p>
+						<br />
+						<p>江苏分公司地址</p>
+						<p>联系电话：0512-57011968</p>
+						<p>联系地址：江苏省昆山市巴城镇浦东软件园2#楼9楼</p>
+						<br />
+						<p>北京办事处地址</p>
+						<p>联系电话：400-998-9972</p>
+						<p>联系地址：北京市朝阳区常营首开东都汇B座605</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="Top">
+				<span>Top <i class="fa fa-sort-up"></i></span>
+			</div>
+			<div class="copyRight">
+				<p>©2018 深圳市盛钱包科技有限公司 版权所有</p>
+				<a href="">电脑版</a>
+			</div>
+		</div>
+		<div class="toolBar">
+			<ul>
+				<li>
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:10010">
+						<i class="fa fa-phone"></i>
+						<span>电话咨询</span>
+					</a>
+				</li>
+				<li>
+					<a href="list_book.html">
+						<i class="fa fa-commenting"></i>
+						<span>在线加盟</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="images/js/Jquery.js"></script>
+	<script type="text/javascript" src="images/js/swiper.min.js"></script>
+	<script type="text/javascript">	
+
+		// 返回顶部
+		$('#Top').on('click',function (){
+			$('body').animate({
+				scrollTop: 0
+			});
+		});
+
+		// 导航切换
+		var nav = $('.navbar a');
+		var flog = true;
+		var iNow = 0;
+		var timer = null; 
+		var right = 0;
+
+		// 当屏幕大于768，则计算导航切换位置
+		if (document.documentElement.clientWidth > 768) {
+			right = ($('body').innerWidth() - 768) / 2;
+		}
+		$(window).resize(function (){
+			if (document.documentElement.clientWidth > 768) {
+				right = ($('body').innerWidth() - 768) / 2;
+			}else{
+				right = 0;
+			}
+		});
+		
+		$('.header .fa-navicon').on('click',function (){
+			if (flog) {
+				$('.header .navbar').css('right',right);
+				$('.main').css('transform','translateX(-.75rem)');
+				
+				timer = setInterval(function (){
+					$(nav).eq(iNow).css({
+						'webkitTransform' : 'translateX(0)',
+						'mozTransform' : 'translateX(0)',
+						'oTransform' : 'translateX(0)',
+						'msTransform' : 'translateX(0)',
+						'transform' : 'translateX(0)'
+					});
+					if (iNow == nav.length-1) {
+						iNow = 0;
+						clearInterval(timer);
+					}else{
+						iNow ++;
+					}
+				},100);
+			}else{
+				$('.header .navbar').css('right','-.75rem');
+				$('.main').css('transform','translateX(0)');
+				for (var i = 0; i < nav.length; i++) {
+					$(nav).eq(i).css({
+						'webkitTransform' : 'translateX(.75rem)',
+						'mozTransform' : 'translateX(.75rem)',
+						'oTransform' : 'translateX(.75rem)',
+						'msTransform' : 'translateX(.75rem)',
+						'transform' : 'translateX(.75rem)'
+					});
+				}
+			}
+			flog = !flog;
+		});
+		$('.main').on('click',function (){
+			$('.header .navbar').css('right','-.75rem');
+			$('.main').css('transform','translateX(0)');
+			for (var i = 0; i < nav.length; i++) {
+				$(nav).eq(i).css({
+					'webkitTransform' : 'translateX(.75rem)',
+					'mozTransform' : 'translateX(.75rem)',
+					'oTransform' : 'translateX(.75rem)',
+					'msTransform' : 'translateX(.75rem)',
+					'transform' : 'translateX(.75rem)'
+				});
+			}
+			flog = true;
+		});
+
+		// 移动端适配,动态计算屏幕的宽度，从而得到网页的fontSize大小
+		;(function (doc, win, undefined) {
+           var docEl = doc.documentElement,
+             resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+             recalc = function () {
+               var clientWidth = docEl.clientWidth;
+               if (clientWidth === undefined) {return;}
+               if (clientWidth >= 768){clientWidth=768};
+               docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+             };
+           if (doc.addEventListener === undefined) return;
+           win.addEventListener(resizeEvt, recalc, false);
+           doc.addEventListener('DOMContentLoaded', recalc, false)
+         })(document, window);
+	</script>
+</body>
+</html>

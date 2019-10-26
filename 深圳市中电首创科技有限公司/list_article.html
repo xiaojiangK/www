@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densitydpi=medium, viewport-fit=cover" /> 
+  <title>惠州碧桂园楼盘/深圳东进，就住碧桂园</title> 
+  <link type="text/css" rel="stylesheet" href="images/css/base_1.css" /> 
+  <script type="text/javascript">
+        var home_index='1';
+        var noEditTag='';
+        var user_name = "goukuai123";
+        var aGlobalBannerHeight = {};
+        var is_bianji = "0";
+        var is_wap_view = parseInt(0);
+    </script> 
+  <script type="text/javascript" src="images/js/language_1.js"></script> 
+  <script type="text/javascript" src="images/js/cookies_1.js"></script> 
+  <script src="images/js/jquery-1.7.1.min_1.js" language="JavaScript"></script> 
+  <script type="text/javascript" src="images/js/nav_1.js"></script> 
+  <script type="text/javascript" src="images/js/swipe_1.js"></script> 
+  <script type="text/javascript" src="images/js/ajax_info_1.js"></script> 
+  <script type="text/javascript" src="images/js/public_1.js"></script> 
+  <link type="text/css" rel="stylesheet" href="images/css/web_frame_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/change_module_1.css" /> 
+  <link id="webSkinCss" type="text/css" rel="stylesheet" href="images/css/webskin_1.css" /> 
+  <link id="webSkinCss" type="text/css" rel="stylesheet" href="images/css/style_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/index_2.css" /> 
+  <script type="text/javascript" src="images/js/new_wap_public_1.js"></script> 
+  <script type="text/javascript" src="images/js/wapshare_1.js"></script> 
+  <link type="text/css" rel="stylesheet" href="images/css/icomoon_style_1.css" /> 
+  <link rel="stylesheet" type="text/css" href="images/css/iconfont_5.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/module_style_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/hmo_style_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/user_define_css_8.css" /> 
+  <script src="images/js/model_banner_1.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="images/js/move_module_1.js"></script> 
+  <script src="images/js/ueditor.parse_1.js"></script> 
+  <link type="text/css" rel="stylesheet" href="images/css/show_1.css" /> 
+  <link type="text/css" rel="stylesheet" href="images/css/animate.min_1.css" /> 
+ </head> 
+ <body> 
+  <div class="webBody" style="background:#fff;" state="close" id="webBody" data-curbg="wbg_137" data-ver="0"> 
+   <script>
+            function focusFun(o){
+                var focusId = $("#"+o).find(".focusimg"),
+                focusW = focusId.width(),
+                focusP = focusId.find(".focusPage"),
+                typeN = focusId.attr("type"),
+                focusUl = focusId.find(".focusInfo ul"),
+                focusLi = focusId.find(".focusInfo li"),
+                liLength = focusLi.length,
+                numW = Math.ceil(focusW*liLength),
+                scrollW = focusW,
+                pageH = '',
+                pageN = 0;
+                if(typeN == 1){
+                    for(var i=0; i<liLength; i++){
+                        if(i == 0){
+                            pageH += '<span class="cur"></span>';
+                        }else{
+                            pageH += '<span></span>';
+                        }
+                    }
+                    focusId.find("li").width(focusW);
+                }else if(typeN == 2){
+                    for(var i=0; i<liLength; i++){
+                        var imgSrc = focusId.find(".focusInfo li:eq("+i+") img").attr("src");
+                        if(i == 0){
+                            pageH += '<span class="cur" style="width:'+100/liLength+'%;"><em><img src="'+imgSrc+'"></em></span>';
+                        }else{
+                            pageH += '<span style="width:'+100/liLength+'%;"><em><img src="'+imgSrc+'"></em></span>';
+                        }
+                    }
+                    focusId.find("li").width(focusW);
+                }else if(typeN == 3 || typeN == 4){
+                    if(liLength < 3){
+                        focusUl.append(focusUl.html());
+                        if(liLength < 2){
+                            focusUl.append(focusUl.html());
+                        }
+                    }
+                    liLength = 4;
+                    focusId.find("li").width(focusW/3);
+                    focusId.find("li:first").addClass("cur");
+                    focusId.find("li:last").insertBefore(focusId.find("li:first"));
+                    scrollW = focusW/3;
+                    numW = Math.ceil(focusW*liLength);
+                    if(typeN == 4){
+                        for(var i=0; i<liLength; i++){
+                            if(i == 0){
+                                pageH += '<span class="cur"></span>';
+                            }else{
+                                pageH += '<span></span>';
+                            }
+                        }
+                        focusId.find("li").each(function(){
+                            $(this).find(".pic").height($(this).width());
+                        })
+                    }
+                }else if(typeN == 5){
+                    for(var i=0; i<liLength; i++){
+                        if(i == 0){
+                            pageH += '<span class="cur"></span>';
+                        }else{
+                            pageH += '<span></span>';
+                        }
+                    }
+                    focusId.find("li").width(focusW/3*2);
+                    numW = Math.ceil((focusW/3+5)*2*liLength);
+                    scrollW = focusW/3*2;
+                }
+                focusP.html(pageH);
+                focusUl.width(numW+'px');
+                function focusTime(){
+                    var sLeft = focusId.find(".focusInfo").scrollLeft();
+                    focusId.find(".focusInfo").animate({scrollLeft:scrollW},function(){
+                        focusId.find(".focusInfo li:first").insertAfter(focusId.find(".focusInfo li:last"));
+                        focusId.find(".focusInfo").scrollLeft(0);
+                    });
+                    if(typeN == 3 || typeN == 4){
+                        focusId.find(".focusInfo li.cur").removeClass("cur").next().addClass("cur");
+                    }
+                    if(pageN == liLength-1){
+                        pageN = 0;
+                        /*sLeft = 0;
+                        focusId.find(".focusInfo").animate({scrollLeft:sLeft});*/
+                        focusP.find("span").removeClass("cur").eq(pageN).addClass("cur");
+                    }else{
+                        ++pageN
+                        /*sLeft += focusW;
+                        focusId.find(".focusInfo").animate({scrollLeft:sLeft});*/
+                        focusP.find("span").removeClass("cur").eq(pageN).addClass("cur");
+                    }
+                }
+                var timeObj = setInterval(focusTime,2000);
+            }
+            $(function(){
+                var document_h = $(window).height();
+                $("#wrapper").css({"min-height":document_h+'px'});
+            })
+        </script> 
+   <style type="text/css">
+            .mainContainer{overflow: hidden;min-height: 368px;}
+        </style> 
+   <div class="wrapper" id="wrapper" data-curbg="wbg_"> 
+    <!--ÏµÍ³ËÑË÷Ä£¿éSTART--> 
+    <!--ÏµÍ³ËÑË÷Ä£¿éEND--> 
+    <style>
+   /*.ev_t_top{position: relative; border-bottom: 2px solid #000;}*/
+.ev_t_top_div{background:#fafafa; padding:9px 0; border-top:1px solid #fafafa; border-bottom:1px solid #fafafa;}
+/*.ev_t_top_car{height: 22px;} */
+  /*.ev_t_top .ev_t_home{background: url('images/login_run_1.png') no-repeat; background-size: 20px; margin-top: 5px;}*/
+  .ev_t_top .ev_t_home{background:none;}
+  .ev_t_top .ev_t_home .FT-page{font-size: 22px;}
+  .ev_t_top .ev_t_top_a a{}
+  .ev_t_top .ev_t_top_a .ev_t_top_share{background: url('images/fenxiang2_1.png') no-repeat; background-size: 22px; width: 22px; height: 22px;}
+  .ev_t_top .ev_t_top_a .ev_t_top_user{background: url('images/user_1.png') no-repeat; background-size: 22px; position: relative;}
+  .ev_t_top .ev_t_top_a .ev_t_top_cart{background: url('images/cart_1.png') no-repeat; background-size: 24px;}
+  .ev_t_top .ev_t_top_a .ev_t_top_arrange1 {background: url('images/tit_icon4_1.png') no-repeat;background-size: 22px;width: 22px; height: 22px;}
+  .ev_t_top .ev_t_top_a .ev_t_top_arrange2 {background: url('images/tit_icon5_1.png') no-repeat;background-size: 22px;width: 22px; height: 22px;}
+    .dingwei{background: url('images/dignwei_1.png') no-repeat 10px 4px; padding:0 10px 0 30px; line-height: 26px; display: inline-block; border-radius: 5em; border: 1px solid #ccc; color:#ccc; margin-left: 15px; font-size: 12px;}
+  #current_position{}
+  .ev_t_top_a .share{display: block; background:url(images/product_share.png) center center no-repeat; background-size:18px 18px !important; width:18px; height:18px; margin-top:4px;}
+</style> 
+    <!-- 头部 -->
+    <div class="ev_t_top_car"></div> 
+    <div class="ev_t_top" id="evTTop" visible="show"> 
+     <div class="ev_t_top_div bgSetup"> 
+      <a href="javascript:history.go(-1)" class="ev_t_home"> <span class="FT-page FT-page-fanhui iColor"></span> </a> 
+      <div class="ev_t_top_a"> 
+       <a href="javascript:;" id="productFenxiang" data-user="0" class="shareIcon"> <span class="share"></span> </a> 
+      </div> 
+     </div> 
+    </div> 
+    <script language="javascript">
+    function app_share_fn(){
+      var title=document.title;
+      var url=window.location.href;
+      var con=$("meta[name='description']").attr("name");
+      if(!con)con=title;
+      var pic=$("img")[0].src;
+      android.share(title,con,pic,url);
+    }
+    $(function(){
+      $(document).scroll(function(){
+        var id = $("#sysSearch");
+        if(id.length){
+          var t = $(this), tScroll = t.scrollTop();
+          var height=parseInt();
+          var trans=parseInt();
+          var background='';
+          height=height ? height :10;
+          trans=trans ? (trans/100) :'0.5';
+          background=background ? background :'#f00';
+          /*if(tScroll <= 60){
+            id.css("position","relative");
+          }else{
+            id.css("position","fixed");
+          }*/
+                  }
+      })
+    })
+</script> 
+    <script type="text/javascript" src="images/js/xss_1.js"></script> 
+    <div class="mainContainer"> 
+     <div class="addContainer q" id="add_container"> 
+      <!-- 二级标题 -->
+      <div visible="show" rel="r_layout_1" lock="lock" changes="0" id="channel_row_15561557_oldClass" class="customModuleRow classifyRow"> 
+       <div class="customModule "> 
+        <!--moCss--> 
+        <div class="Mo   moStyle" id="channel_mo_15561557_oldClass" motype="s5"> 
+         <table class="MoT"> 
+          <tbody> 
+           <tr> 
+            <td class="MoTL"></td> 
+            <td class="MoTM"></td> 
+            <td class="MoTR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoHead"> 
+          <tbody> 
+           <tr> 
+            <td class="MoHeadL"></td> 
+            <td class="MoHeadM"> 
+             <table class="MoName"> 
+              <tbody> 
+               <tr> 
+                <td class="MoNameL"></td> 
+                <td class="MoNameM"> <strong class="NameTxt"> <a href="#"></a></strong> </td> 
+                <td class="MoNameR"></td> 
+               </tr> 
+              </tbody> 
+             </table> <span class="MoMore"> </span> </td> 
+            <td class="MoHeadR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoBody"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBodyL"></td> 
+            <td class="MoBodyM"> 
+             <div class="MoBodyC"> 
+              <div class="classList">
+               <ul>
+                <li>
+                  <span><a href="">最新动态</a></span>
+                  <span><a href="">行业新闻</a></span>
+                </li>
+               </ul>
+              </div> 
+             </div> </td> 
+            <td class="MoBodyR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <table class="MoB"> 
+          <tbody> 
+           <tr> 
+            <td class="MoBL"></td> 
+            <td class="MoBM"></td> 
+            <td class="MoBR"></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- 主体 -->
+      <div visible="" rel="r_layout_1" lock="lock" changes="0" id="channel_row_15561557_list" class="customModuleRow innerProductRow"> 
+       <div class="customModule "> 
+        <div class="Mo   moStyle" id="channel_mo_15561557_list" motype="s1" data-liststyle="11_2"> 
+         <div class="ev_t_train"> 
+          <div class="ev_t_product_tit"></div> 
+          <div id="contents"> 
+           <div class="ev_t_train_li ev_t_train_li_margin mo_list"> 
+            <div class="obv"> 
+             <div class="ev_t_train_div"> 
+              <div class="ev_t_train_pic imgState" style="position: relative; width:100px;"> 
+               <style>
+                    .pic .collectIcon{position: absolute; right:0; top:15px; display:inline-block; background:#7a7a7a; border-radius:4px 0 0 4px; padding:5px;}
+                    .pic .collectIcon a{background: url('images/collect_1.png') center top; display:block; width:16px; height:16px;}
+                    .pic .collectIcon .cur{background: url('images/collect_1.png') center bottom;}
+                </style> 
+               <table> 
+                <tbody> 
+                 <tr> 
+                  <td class="pic"> <a href=""> <img src="images/1457237_1513568632_1.jpg" /></a> </td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <div class="ev_t_train_text o2o_text" style="padding:0"> 
+               <a class="urlfont" href="">惠深碧桂园楼盘知多少</a> 
+               <p class="textfont">深圳东进就住碧桂园惠州碧桂园新房在售项目总有一款适合您楼盘简介⒈【碧桂园中萃公园】大亚湾，公园环绕 低价格 高赠送户型面积91-105㎡，均价1.15-1.25万元/㎡精装修交楼 有现售⒉【碧桂园湖光山</p> 
+              </div> 
+             </div> 
+            </div> 
+           </div>
+
+           <div class="ev_t_train_li ev_t_train_li_margin mo_list"> 
+            <div class="obv"> 
+             <div class="ev_t_train_div"> 
+              <div class="ev_t_train_pic imgState" style="position: relative; width:100px;"> 
+               <style>
+                    .pic .collectIcon{position: absolute; right:0; top:15px; display:inline-block; background:#7a7a7a; border-radius:4px 0 0 4px; padding:5px;}
+                    .pic .collectIcon a{background: url('images/collect_1.png') center top; display:block; width:16px; height:16px;}
+                    .pic .collectIcon .cur{background: url('images/collect_1.png') center bottom;}
+                </style> 
+               <table> 
+                <tbody> 
+                 <tr> 
+                  <td class="pic"> <a href=""> <img src="images/1457237_1513568632_1.jpg" /></a> </td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <div class="ev_t_train_text o2o_text" style="padding:0"> 
+               <a class="urlfont" href="">惠深碧桂园楼盘知多少</a> 
+               <p class="textfont">深圳东进就住碧桂园惠州碧桂园新房在售项目总有一款适合您楼盘简介⒈【碧桂园中萃公园】大亚湾，公园环绕 低价格 高赠送户型面积91-105㎡，均价1.15-1.25万元/㎡精装修交楼 有现售⒉【碧桂园湖光山</p> 
+              </div> 
+             </div> 
+            </div> 
+           </div>
+
+           <div class="ev_t_train_li ev_t_train_li_margin mo_list"> 
+            <div class="obv"> 
+             <div class="ev_t_train_div"> 
+              <div class="ev_t_train_pic imgState" style="position: relative; width:100px;"> 
+               <style>
+                    .pic .collectIcon{position: absolute; right:0; top:15px; display:inline-block; background:#7a7a7a; border-radius:4px 0 0 4px; padding:5px;}
+                    .pic .collectIcon a{background: url('images/collect_1.png') center top; display:block; width:16px; height:16px;}
+                    .pic .collectIcon .cur{background: url('images/collect_1.png') center bottom;}
+                </style> 
+               <table> 
+                <tbody> 
+                 <tr> 
+                  <td class="pic"> <a href=""> <img src="images/1457237_1513568632_1.jpg" /></a> </td> 
+                 </tr> 
+                </tbody> 
+               </table> 
+              </div> 
+              <div class="ev_t_train_text o2o_text" style="padding:0"> 
+               <a class="urlfont" href="">惠深碧桂园楼盘知多少</a> 
+               <p class="textfont">深圳东进就住碧桂园惠州碧桂园新房在售项目总有一款适合您楼盘简介⒈【碧桂园中萃公园】大亚湾，公园环绕 低价格 高赠送户型面积91-105㎡，均价1.15-1.25万元/㎡精装修交楼 有现售⒉【碧桂园湖光山</p> 
+              </div> 
+             </div> 
+            </div> 
+           </div>
+          </div> 
+         </div>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <link rel="stylesheet" type="text/css" href="images/css/iconfont_6.css" /> 
+   <div style="width:100%;line-height:45px;text-align:center;" class="ev_zhichi">
+     技术支持：
+    <a href="http://www.gzjunyu.cn" rel="nofollow" target="_blank" style="text-decoration:underline;">骏域网络</a> 
+   </div> 
+   <!--Î¢ÃûÆ¬ÏêÏ¸Ò³²»ÏÔÊ¾µ¼º½--> 
+   <!-- <div id="mainBg"></div>
+       <style type="text/css">
+           #mainBg{position: absolute; z-index: -1; top:0; left: 0; width: 100%; background-color: #f5f5f5;}
+       </style> --> 
+   <script type="text/javascript">
+          $(function(){
+            if($(".main").length){
+              $(".main").css("min-height",$(window).height());
+            }
+          })
+       </script> 
+   <div class="Nzz" id="Nzz"></div> 
+   <script type="text/javascript">
+$(function(){
+  if (!$('.ev_t_top').length && !$('.ev_t_product_pj_tit').length) {
+    $('#wxAndAppShowHtml').removeClass('content_margin');
+  }
+  });
+$(".baiduEditorTxtModule img").each(function(){
+  var w = $(this).width();
+  if(w > 320){
+    $(this).css({'width':'100%','height':'auto'});
+}
+});
+//ÅÐ¶ÏÊÇ·ñÎªÎ¢ÐÅ
+function is_weixn(){
+  var ua = navigator.userAgent.toLowerCase();
+  if(ua.match(/MicroMessenger/i)=="micromessenger") {
+    $('#wxAndAppShowHtml').show();
+     return false;
+  } else {
+    $('#wxAndAppShowHtml').hide();
+    return true;
+  }
+}
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r   = window.location.search.substr(1).match(reg);
+     if(r!=null){
+       return  unescape(r[2]);
+     }
+    return '';
+}
+var is_weixn = is_weixn();
+if (is_weixn){
+  writeCookie('openid','',168);
+  var shareModule = $('#shareModule li');
+  if (shareModule.length > 0 ){
+    shareModule.find('.weixin').parent().remove();
+  }
+}else {
+  var openid = GetQueryString('openid');
+  if (!readCookie('openid')){
+    writeCookie('openid',openid);
+  }
+}
+
+</script> 
+   <script language="javascript">
+  var windowW = $(window).width(),windowH = $(window).height();
+  $(window).resize(function(){
+          setTimeout(function(){
+        ButGroupLeftPosition();
+        },500);
+      })
+$(function(){
+    ButGroupLeftPosition();
+  });
+  
+  function ButGroupLeftPosition(states) {
+    if($(".butgroupList").length){
+      var winW = $(window).width();
+      winW = winW < 768 ? winW : 768;
+      $(".butgroupList").each(function(){
+        var Lthis_ = $(this),butItme = Lthis_.find(".newBbutItem");
+        butItme.each(function(){
+          var this_ = $(this).find("a.itemA"),iLiWidth = this_.width();
+          // var this_ = $(this),iLiWidth = this_.width(),aitem =this_.find("a.itemA");
+          iAHeight = parseInt(this_.attr("data-height"));
+          /*if(winW != 320){
+            var bl = winW/320*iAHeight;
+            this_.height(bl);
+            this_.parent().height(bl);
+          }*/
+          var isReturn = false;
+            if(this_.find(".butText").length){
+                var iFont = this_.find(".butText");
+                iFont.css({'left':"0px"});
+                var iFontWidth = iFont.width();
+                var iFontLeftBfb = parseFloat(iFont.attr("data-left")).toFixed(4);
+                var iFontLeftPx=(iFontLeftBfb*iLiWidth)-(iFontWidth/2);
+                if(iFontLeftPx < 0){
+                  iFont.css({'left':0});
+                }else{
+                  iFont.css({'left':iFontLeftPx+"px"});
+                }
+                isReturn = true;
+              }
+            //var time_img = setTimeout(function(){
+            //if(isReturn == true){
+            if(this_.find(".imgicon").length || this_.find(".ficon").length){
+                if(this_.find(".imgicon").length){
+                  var iPic = this_.find(".imgicon"),
+                      iPic_sub = this_.find(".imgicon img");
+                  var w = parseInt(iPic_sub.attr("width"));
+                  if(w>iLiWidth){w=iLiWidth}
+                }else if(this_.find(".ficon").length){
+                  var iPic = this_.find(".ficon");
+                  //var w = iPic.width();
+                  var w = iPic.attr('data-picwidth');
+                }
+                var iPicLeftBfb = parseFloat(iPic.attr("data-left")).toFixed(4);
+                var iPicLeftPx=(iPicLeftBfb*iLiWidth)-(w/2);
+                if(iPicLeftPx < 0){
+                  iPic.css({'left':0});
+                }else{
+                  iPic.css({'left':iPicLeftPx+"px"});
+                }
+                //clearInterval(time_img);
+              }
+            //}
+            //},500);
+
+          });
+        });
+    }
+  }
+
+  // ¼ÆËã³ÇÊÐ×ó²à¾àÀë
+  function cityDrag() {
+      if($("#cityMo").length){
+          var winW = $("#wrapper").width();
+          winW = winW < 768 ? winW : 768;
+          var this_ = $("#cityMo"), thisW = this_.attr("data-width"), thisH = this_.height();
+          var iPicLeft = parseFloat(this_.attr("data-left")).toFixed(4);
+          if(iPicLeft > winW){
+              thisW = 93;
+              var iPicLeftPx = winW-thisW;
+              this_.css({'left':iPicLeftPx+"px"});
+          }else{
+              if(isNaN(iPicLeft)){
+                  var iPicLeftPx = winW-thisW;
+              }else if(iPicLeft == 0){
+                  var iPicLeftPx = 0;
+              }else{
+                  var iPicLeftPx = (iPicLeft*winW)-(thisW/2);
+              }
+              this_.css({'left':(iPicLeftPx/320).toFixed(2)+"px"});
+          }
+      }
+  }
+
+uParse('.ev_t_product_xq_con', {
+  rootPath: 'http://admin.ev123.com/ueditor/'
+});
+uParse('.ev_t_product_xq_new_div', {
+  rootPath: 'http://admin.ev123.com/ueditor/'
+});
+uParse('.articleC', {
+  rootPath: 'http://admin.ev123.com/ueditor/'
+});
+uParse('.baiduEditorTxtModule', {
+  rootPath: 'http://admin.ev123.com/ueditor/'
+});
+</script> 
+   <!--
+--> 
+   <!--¸öÈËÖÐÐÄ²»ÒýÈë²à±ßÀ¸--> 
+   <link href="images/css/member_menu_1.css" rel="stylesheet" type="text/css" /> 
+   <link href="images/css/iconfont_7.css" rel="stylesheet" type="text/css" /> 
+   <img id="wapCountImg" src="" style="width: 1px;height: 1px;" /> 
+  </div> 
+  <!--Î¢ÃûÆ¬ÏêÏ¸Ò³²»ÏÔÊ¾µ¼º½--> 
+  <div data-left="" class="fixedNavBut" id="fixed_nav_but" visible="show" style="display:block;"> 
+   <div class="navMoreBut_4"> 
+    <i class="i-1"></i> 
+    <i class="i-2"></i> 
+    <i class="i-3"></i> 
+    <b class="b-1"></b> 
+    <b class="b-2"></b> 
+    <b class="b-3"></b> 
+   </div> 
+  </div> 
+    <!-- 侧边导航 -->
+    <div id="NMore" class="NMore_1002" state="close"> 
+     <div class="moreSetup"> 
+      <em class="NMTip"></em> 
+      <ul>  
+       <li class="listSetup"> 
+          <a id="foot_index_link" href="/wap_goukuai123.html?showWelcome=1"> 
+              <em></em> 
+              <span class="navText">首页</span> 
+          </a> 
+      </li> 
+       <li class="listSetup"> 
+          <a href="/goukuai123/wap_item/list_15561555_0.html"> 
+              <em></em> 
+              <span class="navText">关于我们</span> 
+          </a> 
+      </li> 
+       <li class="listSetup"> 
+          <a href="/goukuai123/wap_pro/15561556_0_0_0.html"> 
+              <em></em> 
+              <span class="navText">房源精选</span> 
+          </a> 
+      </li> 
+       <li class="listSetup"> 
+          <a href="/wap/guest_book.php?username=goukuai123&amp;channel_id=15561559"> 
+              <em></em> 
+              <span class="navText">在线留言</span> 
+          </a> 
+      </li> 
+       <li class="listSetup"> 
+          <a href="/goukuai123/wap_single/16147651.html"> 
+              <em></em> 
+              <span class="navText">联系我们</span> 
+          </a> 
+      </li> 
+      </ul> 
+     </div> 
+    </div> 
+  <script>
+    function newMenu() {
+        if($("#fixed_nav_but").length){
+            var winW = $("body").width();
+            winW = winW < 640 ? winW : 640;
+            var this_ = $("#fixed_nav_but"), thisW = this_.width(), thisH = this_.height();
+            var iPicLeft = parseFloat(this_.attr("data-left")).toFixed(4);
+            if(isNaN(iPicLeft)){
+                var iPicLeftPx = winW-thisW;
+            }else if(iPicLeft == 0){
+                var iPicLeftPx = 0;
+            }else{
+                var iPicLeftPx = (iPicLeft*winW)-(thisW/2);
+            }
+            this_.css({'left':(iPicLeftPx/332).toFixed(2)+"px"});
+        }
+    }
+    $(function(){
+        newMenu();
+        $(window).size(function(){
+            newMenu();
+        })
+    })
+    /*function fixedNavBut() {
+        if($("#fixed_nav_but").css("display") == 'block'){
+            var winW = $(window).width(),winH = $(window).height();
+            winW = winW < 640 ? winW : 640;
+            var this_ = $("#fixed_nav_but"),
+              NWidth = this_.width(),
+              NHeight = this_.height();
+            var isReturn = false;
+            var Nleft = parseFloat(this_.attr("data-left")).toFixed(4),
+              Ntop = parseFloat(this_.attr("data-top")).toFixed(4);
+            Nleft = (Nleft*winW)-(NWidth/2);
+            Ntop = (Ntop*winH)-(NHeight/2);
+            Nleft < 0 ? Nleft = 0 : Nleft = Nleft;
+            Ntop < 0 ? Ntop = 0 : Ntop = Ntop;
+            this_.css({"left":Nleft+'px',"top":Ntop+'px'});
+        }
+    }*/
+</script>  
+ </body>
+</html>

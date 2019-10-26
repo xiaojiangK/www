@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盛钱包</title>
+	<meta name="viewport" content="width=1200, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="images/css/style.css">
+	<link rel="stylesheet" type="text/css" href="images/css/animate.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<a href=""><img src="images/logo.png"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/">首页</a></li>
+						<li><a href="list_product.html">产品介绍</a></li>
+						<li><a href=list_article.html>行业资讯</a></li>
+						<li><a href="list_book.html" class="active">代理加盟</a></li>
+						<li><a href="msg_onepage.html">APP下载</a></li>
+						<li>
+							<a href="msg_contact.html" class="toggle">联系我们</a>
+							<ul>
+								<li><a href="msg_map.html">详细地址</a></li>
+								<li><a href="msg_about.html">关于我们</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="sub_banner">
+				<img src="images/subBanner2.jpg" alt="" />
+			</div>
+			<div class="book_box">
+				<div class="contacts wow fadeInUp">
+					<p><a href="tel:400-000-2999">加盟电话:400-000-2999</a></p>
+					<ul>
+					 	<li><a href="tel:18188609349">招商经理:18188609349</a></li>
+					 	<li><a href="tel:18188611306">招商经理:18188611306</a></li>
+					 	<li><a href="tel:18088881647">招商经理:18088881647</a></li>
+					</ul>
+				</div>
+				<div class="book">
+					<div class="title wow bounceIn">
+						<strong>加入我们</strong>
+						<span>About Us</span>
+					</div>
+					<div class="form wow fadeInUp">
+						<p>发表您的留言：</p>
+						<form action="">
+							<li class="info">
+								<div class="name required">
+									<label for="name">姓名：</label>
+									<input type="text" required name="name" id="name" />
+								</div>
+								<div class="tel required">
+									<label for="tel">电话：</label>
+									<input type="text" required name="tel" id="tel" />
+								</div>
+								<div class="email">
+									<label for="email">邮箱：</label>
+									<input type="email" name="email" id="email" />
+								</div>
+							</li>
+							<li class="text">
+								<label for="content">内容：</label>
+								<textarea id="content" name="content" placeholder="留言需审核后才会显示"></textarea>
+							</li>
+							<li>
+								<label for="recode">验证码：</label>
+								<input type="text" name="recode" id="recode" />
+								<img src="" alt="验证码" />
+							</li>
+							<li>
+								<input type="submit" name="submit" value="提交留言" />
+							</li>
+						</form>
+						<div class="content">
+							<p class="msg">留言：</p>
+							<p>暂无留言</p>
+							<!-- <ul>
+								<li>
+									<p>留言内容1</p>
+									<span>2018-4-28</span>
+								</li>
+							</ul> -->
+						</div>
+					</div>
+					<div class="page">
+						<div class="pages">
+							<a href="#" class="prev no">上一页</a>
+							<a href="#" class="active">1</a>
+							<a href="#" class="">1</a>
+							<a href="#" class="next no">下一页</a>
+						</div>
+						<div class="control">
+							<span>共 <span>1</span> 页 到第 <input type="text" name=""> 页</span>
+							<input type="button" name="" value="确定" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="Top"></div>
+			<strong class="tel">服务热线：400-000-2999</strong>
+			<p>粤ICP备16045637号</p>
+			<p>Copyright 盛钱包版权所有. All Rights Reserved.</p>
+			<span class="gs">深圳前海移联科技有限公司</span>
+			<p class="Support"><a href="">管理登录</a> <span> | </span> <a href="">粤ICP备16045637号</a></p>
+		</div>
+	</div>
+	<script type="text/javascript" src="images/js/Jquery.js"></script>
+	<script type="text/javascript" src="images/js/wow.min.js"></script>
+	<script type="text/javascript">	
+		// 滑动动画
+		new WOW().init();
+
+		// 返回顶部、全局
+		$(window).scroll(function (){
+			if ($(window).scrollTop() >= 120) {
+				$('#Top').css('height','50px');
+			}else{
+				$('#Top').css('height','0');
+			}
+		});
+		$('#Top').on('click',function (){
+			$('body').animate({
+				scrollTop: 0
+			});
+		});
+		
+		// 二级菜单
+		$('.nav .toggle').each(function (){
+			$(this).hover(function (){
+				$(this).siblings('ul').show();
+				$(this).siblings('ul').hover(function() {
+					$(this).show();
+				}, function() {
+					$(this).hide();
+				});
+			}, function (){
+				$(this).siblings('ul').hide();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body,.wrap{
+  padding: 0;
+  margin: 0 auto;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+.header{
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1920px;
+  background: #fff;
+  padding: 20px 2.5% 18px 4%;
+}
+.header .logo{
+  float: left;
+}
+.header .right{
+  float: right;
+  line-height: 42px;
+}
+.header .right img{
+  margin: 0 5px 0 0;
+  vertical-align: middle
+}
+.header .right span{
+  vertical-align: middle
+}
+.main{
+  width: 100%;
+  height: 880px;
+  background: url('../bg.png') center center no-repeat;
+  background-size: cover;
+}
+.main .content{
+  height: 880px;
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+}
+.main .login{
+  top: 50%;
+  right: 10%;
+  position: absolute;
+  border-radius: 20px;
+  padding: 66px 60px 125px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, .8);
+  -webkit-box-shadow:0px 0px 40px 0px rgba(187,61,12,0.22);
+  -ms-box-shadow:0px 0px 40px 0px rgba(187,61,12,0.22);
+  box-shadow:0px 0px 40px 0px rgba(187,61,12,0.22);
+}
+.retrieve .login{
+  padding: 46px 60px 60px;
+}
+.main .login .title{
+  color: #333;
+  font-size: 30px;
+  margin: 0 0 60px;
+  text-align: center;
+}
+.login .form {
+  width: 486px
+}
+.login .form li{
+  margin: 0 0 30px;
+  position: relative;
+}
+.login .form input:not([type=checkbox]){
+  width: 100%;
+  height:60px;
+  border: none;
+  -ms-outline: none;
+  outline: none;
+  color: #333;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-indent: 63px;
+  border-radius: 10px;
+  background: #fff;
+  border:1px solid #ddd;
+}
+.login .form input::-webkit-input-placeholder{ 
+  color:#999;
+}
+.login .form input:-o-placeholder{ 
+  color:#999;
+}
+.login .form input::-moz-placeholder{ 
+  color:#999;
+}
+.login .form input:-ms-input-placeholder{ 
+  color:#999;
+}
+.login .form input:input-placeholder{ 
+  color:#999;
+}
+.login .form li.btn{
+  margin: 40px 0 0;
+}
+.login .form li.btns button{
+  width: 225px;
+}
+.login .form li.btns button:first-child{
+  margin: 0 30px 0 0
+}
+.login .form .icon{
+  top: 50%;
+  left: 21px;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.login .form li.vcode{
+  overflow: hidden;
+}
+.login .form li.vcode input{
+  width: 306px;
+  float: left;
+}
+.login .form li.vcode .border-btn{
+  margin: 0;
+  float: right;
+  width: 150px;
+  font-size: 20px;
+}
+.login .form li.vcode .disable{
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+}
+.login .form li .border-btn{
+  color: #FF8134;
+  background: transparent;
+  border: 1px solid #FF8034;
+}
+.login .form li button{
+  width: 100%;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  -ms-outline: none;
+  outline: none;
+  margin: 0 0 20px;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background: -ms-linear-gradient(85deg,rgba(255,106,52,1) 0%,rgba(255,130,52,1) 100%);
+  background: linear-gradient(85deg,rgba(255,106,52,1) 0%,rgba(255,130,52,1) 100%);
+}
+.login .form .other{
+  overflow: hidden;
+  font-size: 20px;
+}
+.login .form .other .remember{
+  float: left;
+  color: #666;
+}
+.login .form .remember input{
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 2px;
+  margin: 0 10px 0 0;
+  vertical-align: sub;
+  border: 1px solid #ccc;
+}
+.login .form .other .forget{
+  float: right;
+  color: #FF7134;
+  text-decoration: none
+}
+.footer{
+  padding: 30px 0;
+  text-align: center;
+}
+.footer p{
+  color: #666;
+  font-size: 20px;
+  margin: 0 0 15px;
+}

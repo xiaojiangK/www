@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>智卡速还</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+	<link rel="stylesheet" type="text/css" href="images/css/style.css" />
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo">
+				<a href=""><img src="images/logo.png" alt="logo" /></a>
+			</div>
+			<div class="banner">
+				<a href=""><img src="images/banner.png" alt="banner" /></a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="form">
+				<form action="">
+					<li>
+						<input type="text" class="name" name="fullname" placeholder="请输入您的姓名" />
+					</li>
+					<li>
+						<input type="text" class="tel" name="telphone" placeholder="请输入您的手机号" />
+					</li>
+					<li>
+						<input type="text" class="wx" name="wx" placeholder="请输入您的微信号" />
+					</li>
+					<li>
+						<input type="submit" class="btn" value="申请代还" name="submit" />
+					</li>
+				</form>
+			</div>
+			<div class="advantage">
+				<div class="title">
+					<p>智卡速还优势</p>
+				</div>
+				<div class="content">
+					<ul>
+						<li>
+							<strong>全额代还</strong>
+							<p>信用卡空了？ <br /> 我们帮你全额代还</p>
+						</li>
+						<li>
+							<strong>智能规划还款</strong>
+							<p>只需5%剩余额度 <br /> 轻松还清全额账单</p>
+						</li>
+						<li>
+							<strong>信用卡智能管理</strong>
+							<p>轻松管理20张信用卡</p>
+						</li>
+						<li>
+							<strong>智能养卡</strong>
+							<p>智能规划还款 <br /> 海量商户、自动规划</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="security">
+				<div class="title">
+					<p>安全放心</p>
+				</div>
+				<div class="content">
+					<ul>
+						<li>
+							<strong>安全稳定</strong>
+							<p>特级安全防护 <br /> 保障资金安全</p>
+						</li>
+						<li class="adviser">
+							<strong>专属顾问</strong>
+							<p>7*24小时专属客服</p>
+						</li>
+						<li>
+							<strong>即时操作</strong>
+							<p>每次代还都如期 即时操作</p>
+						</li>
+					</ul>
+					<a href="" class="btn">申请代还</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>© Copyright 2018 广州纳百川传媒科技有限公司 版权所有</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		// 移动端适配,动态计算屏幕的宽度，从而得到网页的fontSize大小
+		;(function (doc, win, undefined) {
+           var docEl = doc.documentElement,
+             resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+             recalc = function () {
+               var clientWidth = docEl.clientWidth;
+               if (clientWidth === undefined) {return;}
+               if (clientWidth >= 768){clientWidth=768};
+               docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+             };
+           if (doc.addEventListener === undefined) return;
+           win.addEventListener(resizeEvt, recalc, false);
+           doc.addEventListener('DOMContentLoaded', recalc, false)
+         })(document, window);
+	</script>
+</body>
+</html>

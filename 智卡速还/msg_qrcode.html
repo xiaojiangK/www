@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>智卡速还</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+	<link rel="stylesheet" type="text/css" href="images/css/style.css" />
+</head>
+<body>
+	<div class="wrap qrcode">
+		<div class="Tip">
+			<strong>代还流程提示</strong>
+			<p>先加客服，后关注公众号</p>
+		</div>
+		<div class="alert">
+			<div class="one">
+				<p class="step">第一步：长按二维码或下载二维码，添加客服的微信</p>
+				<img src="images/qrcode.png" alt="qrcode" />
+			</div>
+			<div class="tow">
+				<p class="step">第二步：长按二维码或下载二维码，关注微信公众号下载APP</p>
+				<img src="images/qrcode2.png" alt="qrcode2" />
+				<p>长按可复制客服微信申请代还额度</p>
+				<a href="">tcmd000</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		// 移动端适配,动态计算屏幕的宽度，从而得到网页的fontSize大小
+		;(function (doc, win, undefined) {
+           var docEl = doc.documentElement,
+             resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+             recalc = function () {
+               var clientWidth = docEl.clientWidth;
+               if (clientWidth === undefined) {return;}
+               if (clientWidth >= 768){clientWidth=768};
+               docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+             };
+           if (doc.addEventListener === undefined) return;
+           win.addEventListener(resizeEvt, recalc, false);
+           doc.addEventListener('DOMContentLoaded', recalc, false)
+         })(document, window);
+	</script>
+</body>
+</html>

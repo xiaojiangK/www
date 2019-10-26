@@ -1,0 +1,14 @@
+﻿/* left menu */
+#zcmover{width:70px;left:0;top:0;bottom:0;z-index:999;margin:0;padding:0;box-shadow:0 0 4px rgba(0,0,0,.14);}
+#zcmover dl{list-style:none;padding:0px;margin:0px;border-top:1px solid #E7E7E7;width:70px;position:absolute;left:0;top:58%;bottom:0;vertical-align:middle;margin-top:-240px;}
+#zcmover dt{position:absolute;width:70px;display:block;bottom:30px;margin:0;padding:0}
+#zcmover dd{border-bottom:1px solid #E7E7E7;font:normal 12px/normal 'microsoft yahei';margin:0;padding:0}
+#zcmover a,#zcmover a:link,#zcmover a:visited{text-decoration:none;display:block;height:71px;background:transparent url("../left.png")/*tpa=http://www.zcmover.com/tpl/green/images/left.png*/ top center no-repeat;color:#676767;text-align:center;line-height:101px;margin:0;padding:0;}
+#zcmover a:hover{background-color:#FFFDEE;margin:0;padding:0}
+#zcmover a.jgcx{background-position:13px 8px;margin:0;padding:0}
+#zcmover a.dtzz{background-position:13px -68px;margin:0;padding:0}
+#zcmover a.bzal{background-position:13px -138px;margin:0;padding:0}
+#zcmover a.gnxl{background-position:13px -198px;margin:0;padding:0}
+#zcmover a.gjxl{background-position:13px -258px;margin:0;padding:0}
+#zcmover a.tsjy{background-position:13px -318px;margin:0;padding:0}
+#zcmover a.closeddd{background-color:#d90000;background-position:13px -382px;margin:0;padding:0}

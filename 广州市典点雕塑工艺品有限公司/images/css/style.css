@@ -1,0 +1,496 @@
+/* 公共部分 */
+body,a,p,li,ul,ol,h1,h2,h3,h4,h5,strong,div {
+	font-size:14px;
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	color:#2d2d2d;
+}
+img,a{
+	border: none;
+}
+body a:hover{
+	text-decoration: none;
+}
+.wrap,.main,.footer,.page{
+	margin:0 auto; width:100%; overflow: hidden;
+}
+.wrap .container{
+	width:1162px; margin:0 auto; overflow: hidden; 
+}
+.header{
+	width:100%; background: #fff; clear:both; height: 120px;
+}
+ul,li,ol{
+	padding: 0; margin: 0; list-style: none;
+}
+
+/* 头部 */
+.header .nav {
+	width:90%; margin:0 auto;
+}
+.header .container{
+	overflow: inherit; clear: both;
+}
+.header .nav>ul>li{
+	float: left; position: relative;
+}
+.header .nav>ul>li>a{
+	display: block; padding:0 28px; text-align: center; color:#424242; font-size:20px; margin:28px 0 0;
+}
+.header .nav li:not(.logo) a{
+	height:65px; line-height: 65px;
+}
+.header .nav li:not(.logo) a:hover{
+	background:#ec1b31; color: #fff;
+}
+.header .nav .logo{
+	margin-bottom:-80px;
+}
+.header .nav .logo a{
+	margin:8px 0 0;
+}
+.header .nav .toggle ul{
+	border:1px solid #b5b5b5; display: none; overflow: hidden; background: #fff; padding:4px; width:200px; position: absolute; z-index: 9;
+}
+.header .nav .toggle ul a{
+	display: block; width: 100%; height: 65px; line-height: 65px; text-indent: 27px; font-size: 20px;
+}
+
+/* 主体 */
+.banner{
+	width: 100%; overflow: hidden;
+}
+.banner img{
+	width:100%;
+}
+.met_index .container>.title{
+	width:703px; margin:0 auto; padding:70px 0; font-weight: bold; background: url(../title_bg.png) center center no-repeat; text-align: center;
+}
+.met_index .container>.title span{
+	 font-size: 28px;
+}
+.met_index .container>.title p{
+	display: inline; color: #ed3c46; font-size: 26px; margin-left:35px;
+}
+.met_case .container>.title,.met_news .container>.title{
+	 background: url(../title_bg2.png) center center no-repeat; 
+}
+.met_about{
+	width:100%; overflow: hidden; background: #fdd166 url(../about_bg.png) center bottom no-repeat; padding:15px 0 720px; background-size:100% auto;
+}
+.met_about .about_box>img{
+	margin:0 0 80px;
+}
+.met_about .about_box p{
+	line-height: 20px; margin:0 0 20px;
+}
+.met_case{
+	width: 100%; overflow: hidden; padding:30px 0 130px;
+}
+.met_case .case_box{
+	overflow: hidden;
+}
+.met_case .case_box .list{
+	width:9000px; overflow:hidden; -webkit-transition: .6s all;-o-transition: .6s all;-moz-transition: .6s all;-ms-transition: .6s all;transition: .6s all; 
+}
+.met_case .case_box .list li{
+	float: left; width:1162px;
+}
+.met_case .case_box .list .item{
+	width:360px; float: left; margin-right:41px;: 
+}
+.met_case .case_box .list .item:nth-of-type(3n){
+	margin-right:0;
+}
+.met_case .case_box .list img{
+	width: 100%;
+}
+.met_case .case_box .list .title{
+	text-align: center; display: block; margin:30px auto; font-size: 18px;
+}
+.met_case .case_box .list a{
+	display: block; width: 100%;
+}
+.met_case .case_box ol{
+	margin:25px auto 0; overflow: hidden; text-align: center;
+}
+.met_case .case_box ol li{
+	display: inline-block; border-radius: 50%; cursor:pointer; width: 13px; height: 13px; background: #4c4d4d; margin:0 7px;
+}
+.met_case .case_box ol .current{
+	background: #ed3c46;
+}
+.met_product{
+	width:100%; overflow: hidden; background:#fdd166 url(../pro_top_bg.png) center top no-repeat; padding:60px 0 0;
+}
+.met_product .product_inner{
+	background: url(../pro_bom_bg.png) center bottom no-repeat;background-size: 100% auto;  padding:0 0 300px;
+}
+.met_product .product_box{
+	overflow: hidden;
+}
+.met_product .product_box li{
+	float: left; width:360px; margin:0 40px 40px 0;
+}
+.met_product .product_box li img{
+	width: 100%;
+}
+.met_product .product_box li:nth-of-type(3n){
+	 margin:0 0 40px 0;
+}
+.met_news{
+	width: 100%; overflow: hidden; padding:60px 0 360px; background: #fff url(../new_bg.png) center bottom no-repeat; background-size: 100% auto;
+}
+.met_news .news_box{
+	overflow: hidden;
+}
+.met_news .new_info{
+	overflow: hidden; margin:0 0 70px;
+}
+.met_news .new_info .picture{
+	float:left; width:50%;
+}
+.met_news .new_info .picture img{
+	max-width: 100%;
+}
+.met_news .new_info .info{
+	width:50%; float: left; margin:70px 0 0;
+}
+.met_news .new_info .info strong{
+	font-size: 24px; display: block; margin:0 0 25px;
+}
+.met_news .new_info .info .date{
+	font-size: 18px; color: #929292; margin:0 0 25px;
+}
+.met_news .new_info .info .desc{
+	line-height: 26px; height:100px; overflow: hidden; text-overflow: ellipsis;
+}
+.met_news .btn{
+	display: block; width: 70px; height: 30px; border-radius: 5px; background: #ee4547; color: #fff; line-height: 30px; text-align: center; margin:25px 0 0;
+}
+.met_news .list{
+	overflow:hidden;
+}
+.met_news .list li{
+	float: left; width:320px; border: 1px solid #e4e4e4; margin-right:37px;  text-align: center; padding:20px;
+}
+.met_news .list li:nth-of-type(3n){
+	margin-right:0;
+}
+.met_news .list li img{
+	margin:0 0 18px;
+}
+.met_news .list li .date{
+	display: block; width: 100%; font-size: 22px; color: #929292; margin:5px auto 15px;
+}
+.met_news .list li .title{
+	width: 100%; font-size: 22px; margin:0 0 20px;
+}
+.met_news .list li .desc{
+	text-align: left; line-height: 25px; height: 70px; overflow: hidden;
+}
+.met_news .list li .btn{
+	width: 112px; margin:8px auto 5px;
+}
+.slider{
+	position: fixed; top:45%; width:51px; right: 80px;
+}
+.slider>ul>li{
+	position: relative;
+}
+.slider>ul>li .box{
+	position: absolute; right:50px; background:#ff2525; width:160px; padding:10px; top:0; display: none;
+}
+.slider li .box p{
+	 color:#fff; line-height: 20px;
+}
+.slider li .box .telBox{
+	margin-left:20px;
+}
+.slider li .box .qqBox{
+	text-align: center;
+}
+.slider li .box img{
+	margin:10px 0 0; vertical-align: middle;
+}
+.slider li .box strong{
+	display: block; margin:0 0 15px;
+}
+.slider li .box strong,.slider li .box span{
+	color:#fff;
+}
+.slider li .kf{
+	width:190px !important;
+}
+.slider li .kf .workDate p{
+	margin:0 0 15px;
+}
+.slider li .box .k{
+	height: 26px; margin:0 0 20px;
+}
+.slider li .box .k span{
+	display: inline-block; line-height: 26px; margin:10px 20px 0 0; vertical-align: middle; 
+}
+.slider li .box .k2{
+	margin:0 0 40px;
+}
+.slider>ul>li>a{
+	display: block; width:48px; height: 48px; -webkit-transition: .3s all;-o-transition: .3s all;-moz-transition: .3s all;-ms-transition: .3s all;transition: .3s all; border:1px solid #b5b5b5; border-bottom:0; border-top:1px solid #b5b5b5; height: 47px;
+}
+.slider .tel{
+	background:#fff url(../tel_icon.png) center center no-repeat;
+}
+.slider .tel:hover{
+	background:#ff2525 url(../tel_icon2.png) center center no-repeat;
+}
+.slider .qq{
+	background:#fff url(../QQ_icon.png) center center no-repeat;
+}
+.slider .qq:hover{
+	background:#ff2525 url(../QQ_icon2.png) center center no-repeat;
+}
+.slider .music{
+	background:#fff url(../music_icon.png) center center no-repeat;
+}
+.slider .music:hover{
+	background:#ff2525 url(../music_icon2.png) center center no-repeat;
+}
+.slider .top{
+	background:#fff url(../top_icon.png) center center no-repeat;
+}
+.slider .top:hover{
+	background:#ff2525 url(../top_icon2.png) center center no-repeat;
+}
+.slider li:last-child a{
+	border-bottom:1px solid #b5b5b5;
+}
+
+/* 案例列表 */
+.page {
+	width: 100%; overflow: hidden; padding:0 0 400px; background:url(../new_bg.png) center bottom no-repeat; background-size: 100% auto;
+}
+.list_case .met_case{
+	padding:0; 
+}
+.list_case .case_box .list{
+	width: 100%;
+}
+.pager{
+	margin:40px 0 0; overflow: hidden; text-align: center;
+}
+.pager a{
+	display: inline-block; width:30px; height:30px; vertical-align: middle; margin:0 7px; background:#dedee0; text-align: center; line-height: 30px; color:#070706;
+}
+.pager .first,.list_case .pager .last{
+	width:40px;
+}
+.pager a:hover{
+	color: #fff; background:#ed3c46;
+}
+.pager .current{
+	background:#ed3c46; color:#fff;
+}
+.pager .prev{
+	background:#dedee0 url(../prev.png) center center no-repeat;
+}
+.pager .prev:hover{
+	background:#ed3c46 url(../prev_h.png) center center no-repeat;
+}
+.pager .next{
+	background:#dedee0 url(../next.png) center center no-repeat;
+}
+.pager .next:hover{
+	background:#ed3c46 url(../next_h.png) center center no-repeat;
+}
+
+/* 单页 */
+.msg_onepage{
+	width: 100%; padding:0 0 400px;
+}
+.msg_onepage .about_box p{
+	line-height: 35px;
+}
+
+/* 文章列表 */
+.list_article .picture{
+	width: 40% !important;
+}
+.list_article .new_info{
+	margin:0;
+}
+.list_article .met_news{
+	background: none; padding:0;
+}
+.list_article ul{
+	overflow: hidden;
+}
+.list_article ul li{
+	margin:0 0 50px; overflow: hidden;
+}
+.list_article .new_info .info{
+	margin:10px 0 0 50px !important;
+}
+
+/* 文章详情页 */
+.list_article .content{
+	overflow: hidden;
+}
+.list_article .content .msg_head{
+	width:100%; margin:0 0 25px; padding:0 0 25px; border-bottom: 1px solid #ebebeb; overflow: hidden; text-align: center;
+}
+.list_article .content .msg_head .title{
+	color: #ec1b31; font-size: 26px; font-weight: bold; margin: 0 0 30px;
+}
+.list_article .content .date{
+	font-size: 16px; color: #aaaaaa;
+}
+.list_article .content .date span{
+	margin:0 15px;
+}
+.list_article .info img{
+	max-width:100%; margin:0 0 15px;
+}
+.list_article .content .info p{
+	line-height: 30px; text-indent: 2em; margin:0 0 5px;
+}
+.next_prev{
+	margin:25px 0 0; padding:25px 0 0; border-top: 1px solid #ebebeb;
+}
+.next_prev p{
+	line-height: 30px;
+}
+.next_prev img{
+	vertical-align: middle; margin-right:10px;
+}
+
+/* 案例详情页 */
+.msg_case,.msg_pro{
+	padding:140px 0 0; width:100%; overflow: hidden; background:#faf4dc url(../case_top_bg.png) center top no-repeat;
+}
+.msg_case .container{
+	width:1400px;
+}
+.msg_case .container>.title{
+	width:1162px; font-size: 26px; color: #ec1b31; margin:0 auto 60px; text-align: center; font-weight: bold;
+}
+.msg_case .carousel{
+	width:100%; overflow: hidden;
+}
+.msg_case .carousel .bigImg{
+	width:1200px; margin:0 auto 40px; text-align: center;
+}
+.msg_case .carousel .bigImg img{
+	width:100%;
+}
+.msg_case .carousel .smallImg{
+	width:100%; overflow: hidden; margin:0 0 40px;
+}
+.msg_case .carousel .smallImg .btn,.msg_pro .product .btns{
+	display: block; width:64px; height: 120px; margin-top:40px;
+}
+.msg_case .carousel .smallImg .prev,.msg_pro .product .prev{
+	background: #2b2b2b url(../case_prev.png) center center no-repeat; float: left; margin-right:37px;
+}
+.msg_case .carousel .smallImg .next,.msg_pro .product .next{
+	background: #2b2b2b url(../case_next.png) center center no-repeat; float: right;
+}
+.msg_case .carousel .smallImg .list{
+	width:1200px; margin:0 auto; float: left; overflow: hidden;
+}
+.msg_case .carousel .list ul{
+	width:8000px; -webkit-transition:.6s all;-o-transition:.6s all;-moz-transition:.6s all;-ms-transition:.6s all;transition:.6s all;
+}
+.msg_case .carousel .list ul li{
+	width:373px; float: left; margin-right:40px;
+}
+.msg_case .carousel .list ul li img{
+	width:100%; cursor:pointer;
+}
+.msg_case .desc,.msg_case .next_prev{
+	width:1200px; margin:0 auto; overflow: hidden;
+}
+.msg_case .next_prev{
+	margin:25px auto 0;
+}
+.msg_case .desc p{
+	line-height:30px; text-indent: 2em;
+}
+
+/* 产品详情页 */
+.msg_pro .product{
+	width:100%; overflow: hidden; margin:70px 0 0;
+}
+.msg_pro .container{
+	width:1400px;
+}
+.msg_pro .product .prev{
+	margin:260px 60px 0 0;
+}
+.msg_pro .product .next{
+	margin:260px 0 0 0;
+}
+.msg_pro .product .content{
+	float: left; width:1150px;
+}
+.msg_pro .product .bigImg{
+	float:left; width:642px; margin-right:35px;
+}
+.msg_pro .product .smallImg{
+	float: left; width:200px; margin-right:50px;
+}
+.msg_pro .product .smallImg img{
+	margin-bottom: 17px; cursor: pointer;
+}
+.msg_pro .product .desc{
+	float: left;
+}
+.msg_pro .product img{
+	width:100%;
+}
+.msg_pro .product .desc .title{
+	font-size: 24px; color:#e60012; font-weight: bold; margin:0 0 25px;
+}
+.msg_pro .product .desc p{
+	line-height: 30px;
+}
+.msg_pro .btn{
+	display: block; font-size: 22px; width:180px; height: 60px; background:#ec1b31; text-align: center; line-height: 60px; color: #fff; border-radius: 10px; margin-left: 810px;
+}
+
+/* 底部 */
+.footer{
+	background: #ec1b31; width: 100%; padding:60px 0;
+}
+.footer .foot_inner{
+	width:76%; margin:0 auto;
+}
+.footer .foot_nav{
+	overflow: hidden; margin: 0 0 30px;
+}
+.footer .foot_nav li{
+	float: left;
+}
+.footer .foot_nav li a{
+	font-size: 18px; margin-right:60px;
+}
+.footer .share{
+	overflow: hidden; margin: 0 0 30px;
+}
+.footer .share li{
+	float: left; margin-right:30px;
+}
+.footer .address{
+	margin:0 0 26px; color:#fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer .address span{
+	margin-right:30px;
+}
+.footer .copyRight p{
+	color:#fff;
+}
